@@ -985,20 +985,107 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: \
   /usr/local/include/Geant4/G4MergeMode.hh \
   /usr/local/include/Geant4/G4VAccumulable.icc \
   /usr/local/include/Geant4/G4AccValue.icc \
-  /Users/pavelsimko/Documents/cube/include/CubePrimaryGeneratorAction.hh \
-  /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  /usr/local/include/Geant4/G4ParticleGun.hh \
-  /usr/local/include/Geant4/G4VPrimaryGenerator.hh \
+  /Users/pavelsimko/Documents/cube/include/CubeDetectorConstruction.hh \
+  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
   /usr/local/include/Geant4/G4ThreeVector.hh \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /usr/local/include/Geant4/CLHEP/Utility/defs.h \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /usr/local/include/Geant4/G4ParticleDefinition.hh \
-  /usr/local/include/Geant4/G4PDefManager.hh \
+  /usr/local/include/Geant4/G4RotationMatrix.hh \
+  /usr/local/include/Geant4/CLHEP/Vector/Rotation.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
+  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.h \
+  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.h \
+  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationX.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationX.icc \
+  /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+  /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationY.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationY.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/Rotation.icc \
+  /usr/local/include/Geant4/G4Material.hh \
+  /usr/local/include/Geant4/G4Element.hh \
+  /usr/local/include/Geant4/G4ElementTable.hh \
+  /usr/local/include/Geant4/G4ElementVector.hh \
+  /usr/local/include/Geant4/G4IonisParamElm.hh \
+  /usr/local/include/Geant4/G4Isotope.hh \
+  /usr/local/include/Geant4/G4IsotopeVector.hh \
+  /usr/local/include/Geant4/G4IonisParamMat.hh \
+  /usr/local/include/Geant4/G4DensityEffectCalculator.hh \
+  /usr/local/include/Geant4/G4MaterialPropertiesTable.hh \
+  /usr/local/include/Geant4/G4MaterialPropertiesIndex.hh \
+  /usr/local/include/Geant4/G4MaterialPropertyVector.hh \
+  /usr/local/include/Geant4/G4PhysicsFreeVector.hh \
+  /usr/local/include/Geant4/G4PhysicsVector.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /usr/local/include/Geant4/G4Log.hh \
+  /usr/local/include/Geant4/G4PhysicsVectorType.hh \
+  /usr/local/include/Geant4/G4PhysicsVector.icc \
+  /usr/local/include/Geant4/G4MaterialTable.hh \
+  /usr/local/include/Geant4/G4SandiaTable.hh \
+  /usr/local/include/Geant4/G4OrderedTable.hh \
+  /usr/local/include/Geant4/G4DataVector.hh \
+  /usr/local/include/Geant4/G4DataVector.icc \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
+  /usr/local/include/Geant4/G4RunManager.hh \
+  /usr/local/include/Geant4/G4Event.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
+  /usr/local/include/Geant4/evtdefs.hh \
+  /usr/local/include/Geant4/G4Allocator.hh \
+  /usr/local/include/Geant4/G4AllocatorPool.hh \
+  /usr/local/include/Geant4/G4PrimaryVertex.hh \
+  /usr/local/include/Geant4/G4PrimaryParticle.hh \
+  /usr/local/include/Geant4/pwdefs.hh \
+  /usr/local/include/Geant4/G4HCofThisEvent.hh \
+  /usr/local/include/Geant4/G4VHitsCollection.hh \
+  /usr/local/include/Geant4/G4DCofThisEvent.hh \
+  /usr/local/include/Geant4/G4VDigiCollection.hh \
+  /usr/local/include/Geant4/G4TrajectoryContainer.hh \
+  /usr/local/include/Geant4/G4VTrajectory.hh \
+  /usr/local/include/Geant4/G4VUserEventInformation.hh \
+  /usr/local/include/Geant4/G4EventManager.hh \
+  /usr/local/include/Geant4/G4StackManager.hh \
+  /usr/local/include/Geant4/G4UserStackingAction.hh \
+  /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /usr/local/include/Geant4/G4StackedTrack.hh \
+  /usr/local/include/Geant4/G4TrackStack.hh \
+  /usr/local/include/Geant4/G4SmartTrackStack.hh \
+  /usr/local/include/Geant4/G4SubEventTrackStack.hh \
+  /usr/local/include/Geant4/G4SubEvent.hh \
+  /usr/local/include/Geant4/G4Track.hh \
+  /usr/local/include/Geant4/trkdefs.hh \
+  /usr/local/include/Geant4/G4LogicalVolume.hh \
+  /usr/local/include/Geant4/G4Region.hh \
+  /usr/local/include/Geant4/G4GeomSplitter.hh \
+  /usr/local/include/Geant4/geomwdefs.hh \
   /usr/local/include/Geant4/G4AutoLock.hh \
   /usr/local/include/Geant4/G4Threading.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/day.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/exception.h \
@@ -1040,132 +1127,18 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/jthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
-  /usr/local/include/Geant4/pwdefs.hh \
-  /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
-  /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
-  /usr/local/include/Geant4/G4ParticleDefinition.icc \
-  /usr/local/include/Geant4/G4PrimaryVertex.hh \
-  /usr/local/include/Geant4/G4Allocator.hh \
-  /usr/local/include/Geant4/G4AllocatorPool.hh \
-  /usr/local/include/Geant4/G4PrimaryParticle.hh \
-  /usr/local/include/Geant4/G4ParticleMomentum.hh \
-  /Users/pavelsimko/Documents/cube/include/CubeDetectorConstruction.hh \
-  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
-  /usr/local/include/Geant4/G4Material.hh \
-  /usr/local/include/Geant4/G4Element.hh \
-  /usr/local/include/Geant4/G4ElementTable.hh \
-  /usr/local/include/Geant4/G4ElementVector.hh \
-  /usr/local/include/Geant4/G4IonisParamElm.hh \
-  /usr/local/include/Geant4/G4Isotope.hh \
-  /usr/local/include/Geant4/G4IsotopeVector.hh \
-  /usr/local/include/Geant4/G4IonisParamMat.hh \
-  /usr/local/include/Geant4/G4DensityEffectCalculator.hh \
-  /usr/local/include/Geant4/G4MaterialPropertiesTable.hh \
-  /usr/local/include/Geant4/G4MaterialPropertiesIndex.hh \
-  /usr/local/include/Geant4/G4MaterialPropertyVector.hh \
-  /usr/local/include/Geant4/G4PhysicsFreeVector.hh \
-  /usr/local/include/Geant4/G4PhysicsVector.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /usr/local/include/Geant4/G4Log.hh \
-  /usr/local/include/Geant4/G4PhysicsVectorType.hh \
-  /usr/local/include/Geant4/G4PhysicsVector.icc \
-  /usr/local/include/Geant4/G4MaterialTable.hh \
-  /usr/local/include/Geant4/G4SandiaTable.hh \
-  /usr/local/include/Geant4/G4OrderedTable.hh \
-  /usr/local/include/Geant4/G4DataVector.hh \
-  /usr/local/include/Geant4/G4DataVector.icc \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /usr/local/include/Geant4/G4RotationMatrix.hh \
-  /usr/local/include/Geant4/CLHEP/Vector/Rotation.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
-  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.h \
-  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.h \
-  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationX.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationX.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationY.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationY.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/Rotation.icc \
-  /usr/local/include/Geant4/G4Box.hh \
-  /usr/local/include/Geant4/G4GeomTypes.hh \
-  /usr/local/include/Geant4/G4GeomConfig.hh \
-  /usr/local/include/Geant4/G4CSGSolid.hh \
-  /usr/local/include/Geant4/G4VSolid.hh \
-  /usr/local/include/Geant4/geomdefs.hh \
-  /usr/local/include/Geant4/G4VSolid.icc \
-  /usr/local/include/Geant4/G4Polyhedron.hh \
-  /usr/local/include/Geant4/HepPolyhedron.h \
-  /usr/local/include/Geant4/G4TwoVector.hh \
-  /usr/local/include/Geant4/CLHEP/Vector/TwoVector.h \
-  /usr/local/include/Geant4/CLHEP/Vector/TwoVector.icc \
-  /usr/local/include/Geant4/G4Point3D.hh \
-  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h \
-  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
-  /usr/local/include/Geant4/G4Normal3D.hh \
-  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h \
-  /usr/local/include/Geant4/G4Transform3D.hh \
-  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.h \
-  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc \
-  /usr/local/include/Geant4/CLHEP/Geometry/Vector3D.h \
-  /usr/local/include/Geant4/G4Visible.hh \
-  /usr/local/include/Geant4/G4Visible.icc \
-  /usr/local/include/Geant4/G4Box.icc \
-  /usr/local/include/Geant4/G4LogicalVolume.hh \
-  /usr/local/include/Geant4/G4Region.hh \
-  /usr/local/include/Geant4/G4GeomSplitter.hh \
-  /usr/local/include/Geant4/geomwdefs.hh \
   /usr/local/include/Geant4/G4Region.icc \
   /usr/local/include/Geant4/G4VPhysicalVolume.hh \
+  /usr/local/include/Geant4/geomdefs.hh \
   /usr/local/include/Geant4/G4VPhysicalVolume.icc \
   /usr/local/include/Geant4/G4LogicalVolume.icc \
-  /usr/local/include/Geant4/G4RunManager.hh \
-  /usr/local/include/Geant4/G4Event.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
-  /usr/local/include/Geant4/evtdefs.hh \
-  /usr/local/include/Geant4/G4HCofThisEvent.hh \
-  /usr/local/include/Geant4/G4VHitsCollection.hh \
-  /usr/local/include/Geant4/G4DCofThisEvent.hh \
-  /usr/local/include/Geant4/G4VDigiCollection.hh \
-  /usr/local/include/Geant4/G4TrajectoryContainer.hh \
-  /usr/local/include/Geant4/G4VTrajectory.hh \
-  /usr/local/include/Geant4/G4VUserEventInformation.hh \
-  /usr/local/include/Geant4/G4EventManager.hh \
-  /usr/local/include/Geant4/G4StackManager.hh \
-  /usr/local/include/Geant4/G4UserStackingAction.hh \
-  /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
-  /usr/local/include/Geant4/G4StackedTrack.hh \
-  /usr/local/include/Geant4/G4TrackStack.hh \
-  /usr/local/include/Geant4/G4SmartTrackStack.hh \
-  /usr/local/include/Geant4/G4SubEventTrackStack.hh \
-  /usr/local/include/Geant4/G4SubEvent.hh \
-  /usr/local/include/Geant4/G4Track.hh \
-  /usr/local/include/Geant4/trkdefs.hh \
   /usr/local/include/Geant4/G4DynamicParticle.hh \
   /usr/local/include/Geant4/G4ElectronOccupancy.hh \
   /usr/local/include/Geant4/G4LorentzVector.hh \
+  /usr/local/include/Geant4/G4ParticleDefinition.hh \
+  /usr/local/include/Geant4/G4PDefManager.hh \
+  /usr/local/include/Geant4/G4ParticleDefinition.icc \
+  /usr/local/include/Geant4/G4ParticleMomentum.hh \
   /usr/local/include/Geant4/G4DynamicParticle.icc \
   /usr/local/include/Geant4/G4TrackStatus.hh \
   /usr/local/include/Geant4/G4TouchableHandle.hh \
@@ -1173,6 +1146,13 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: \
   /usr/local/include/Geant4/G4TouchableHistory.hh \
   /usr/local/include/Geant4/G4NavigationHistory.hh \
   /usr/local/include/Geant4/G4AffineTransform.hh \
+  /usr/local/include/Geant4/G4Transform3D.hh \
+  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Vector3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h \
   /usr/local/include/Geant4/G4AffineTransform.icc \
   /usr/local/include/Geant4/G4NavigationLevel.hh \
   /usr/local/include/Geant4/G4NavigationLevelRep.hh \
@@ -1201,6 +1181,8 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: \
   /usr/local/include/Geant4/G4Navigator.hh \
   /usr/local/include/Geant4/G4NormalNavigation.hh \
   /usr/local/include/Geant4/G4VNavigation.hh \
+  /usr/local/include/Geant4/G4VSolid.hh \
+  /usr/local/include/Geant4/G4VSolid.icc \
   /usr/local/include/Geant4/G4AuxiliaryNavServices.hh \
   /usr/local/include/Geant4/G4AuxiliaryNavServices.icc \
   /usr/local/include/Geant4/G4NormalNavigation.icc \
@@ -1300,22 +1282,6 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: \
   /usr/local/include/Geant4/rundefs.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
   /usr/local/include/Geant4/G4Run.hh \
-  /usr/local/include/Geant4/G4AccumulableManager.hh \
-  /usr/local/include/Geant4/G4AccumulableManager.icc \
-  /usr/local/include/Geant4/G4AccArray.hh \
-  /usr/local/include/Geant4/G4AccArray.icc \
-  /usr/local/include/Geant4/G4AccMap.hh \
-  /usr/local/include/Geant4/G4AccMap.icc \
-  /usr/local/include/Geant4/G4AccUnorderedMap.hh \
-  /usr/local/include/Geant4/G4AccUnorderedMap.icc \
-  /usr/local/include/Geant4/G4AccVector.hh \
-  /usr/local/include/Geant4/G4AccVector.icc \
-  /usr/local/include/Geant4/G4LogicalVolumeStore.hh \
-  /usr/local/include/Geant4/G4VStoreNotifier.hh \
-  /usr/local/include/Geant4/G4VNotifier.hh \
-  /usr/local/include/Geant4/G4UnitsTable.hh \
-  /usr/local/include/Geant4/G4UnitsTable.icc \
-  /usr/local/include/Geant4/G4SystemOfUnits.hh \
   /usr/local/include/Geant4/G4AnalysisManager.hh \
   /usr/local/include/Geant4/G4GenericAnalysisManager.hh \
   /usr/local/include/Geant4/G4ToolsAnalysisManager.hh \
@@ -1375,4 +1341,5 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: \
   /usr/local/include/Geant4/G4ToolsAnalysisManager.icc \
   /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
   /usr/local/include/Geant4/G4GenericFileManager.hh \
-  /usr/local/include/Geant4/G4GenericFileManager.icc
+  /usr/local/include/Geant4/G4GenericFileManager.icc \
+  /usr/local/include/Geant4/G4SystemOfUnits.hh

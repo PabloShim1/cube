@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o.d"
   "CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o"
   "CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o.d"
+  "CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o"
+  "CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o.d"
   "CMakeFiles/cube.dir/src/CubeEventAction.cc.o"
   "CMakeFiles/cube.dir/src/CubeEventAction.cc.o.d"
   "CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o"

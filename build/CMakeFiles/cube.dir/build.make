@@ -114,10 +114,24 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/src/CubeDetectorConstruction.cc -o CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.s
 
+CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: CMakeFiles/cube.dir/flags.make
+CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: /Users/pavelsimko/Documents/cube/src/CubeDetectorMessenger.cc
+CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o -MF CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o.d -o CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeDetectorMessenger.cc
+
+CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cube/src/CubeDetectorMessenger.cc > CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.i
+
+CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/src/CubeDetectorMessenger.cc -o CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.s
+
 CMakeFiles/cube.dir/src/CubeEventAction.cc.o: CMakeFiles/cube.dir/flags.make
 CMakeFiles/cube.dir/src/CubeEventAction.cc.o: /Users/pavelsimko/Documents/cube/src/CubeEventAction.cc
 CMakeFiles/cube.dir/src/CubeEventAction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cube.dir/src/CubeEventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cube.dir/src/CubeEventAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeEventAction.cc.o -MF CMakeFiles/cube.dir/src/CubeEventAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeEventAction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeEventAction.cc
 
 CMakeFiles/cube.dir/src/CubeEventAction.cc.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/cube.dir/src/CubeEventAction.cc.s: cmake_force
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: CMakeFiles/cube.dir/flags.make
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: /Users/pavelsimko/Documents/cube/src/CubePrimaryGeneratorAction.cc
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o -MF CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o.d -o CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubePrimaryGeneratorAction.cc
 
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.s: cmake_force
 CMakeFiles/cube.dir/src/CubeRunAction.cc.o: CMakeFiles/cube.dir/flags.make
 CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src/CubeRunAction.cc
 CMakeFiles/cube.dir/src/CubeRunAction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cube.dir/src/CubeRunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cube.dir/src/CubeRunAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeRunAction.cc.o -MF CMakeFiles/cube.dir/src/CubeRunAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeRunAction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeRunAction.cc
 
 CMakeFiles/cube.dir/src/CubeRunAction.cc.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.s: cmake_force
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: CMakeFiles/cube.dir/flags.make
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cube/src/CubeSteppingAction.cc
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o -MF CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeSteppingAction.cc
 
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.i: cmake_force
@@ -175,6 +189,7 @@ cube_OBJECTS = \
 "CMakeFiles/cube.dir/cube.cc.o" \
 "CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o" \
 "CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o" \
+"CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o" \
 "CMakeFiles/cube.dir/src/CubeEventAction.cc.o" \
 "CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o" \
 "CMakeFiles/cube.dir/src/CubeRunAction.cc.o" \
@@ -186,6 +201,7 @@ cube_EXTERNAL_OBJECTS =
 cube: CMakeFiles/cube.dir/cube.cc.o
 cube: CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o
 cube: CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o
+cube: CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o
 cube: CMakeFiles/cube.dir/src/CubeEventAction.cc.o
 cube: CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o
 cube: CMakeFiles/cube.dir/src/CubeRunAction.cc.o
@@ -230,7 +246,7 @@ cube: /usr/local/lib/libG4global.dylib
 cube: /usr/local/lib/libG4clhep.dylib
 cube: /usr/local/lib/libG4ptl.3.0.0.dylib
 cube: CMakeFiles/cube.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable cube"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable cube"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cube.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

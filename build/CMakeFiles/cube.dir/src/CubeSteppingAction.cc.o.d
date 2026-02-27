@@ -978,10 +978,29 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/pavelsimko/Documents/cube/include/CubeEventAction.hh \
-  /usr/local/include/Geant4/G4UserEventAction.hh \
   /Users/pavelsimko/Documents/cube/include/CubeDetectorConstruction.hh \
   /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+  /usr/local/include/Geant4/G4ThreeVector.hh \
+  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
+  /usr/local/include/Geant4/CLHEP/Utility/defs.h \
+  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /usr/local/include/Geant4/G4RotationMatrix.hh \
+  /usr/local/include/Geant4/CLHEP/Vector/Rotation.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
+  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.h \
+  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.h \
+  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationX.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationX.icc \
+  /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+  /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationY.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationY.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.h \
+  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.icc \
+  /usr/local/include/Geant4/CLHEP/Vector/Rotation.icc \
   /usr/local/include/Geant4/G4Material.hh \
   /usr/local/include/Geant4/G4Element.hh \
   /usr/local/include/Geant4/G4ElementTable.hh \
@@ -1023,56 +1042,12 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4OrderedTable.hh \
   /usr/local/include/Geant4/G4DataVector.hh \
   /usr/local/include/Geant4/G4DataVector.icc \
-  /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
-  /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /usr/local/include/Geant4/G4ThreeVector.hh \
-  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
-  /usr/local/include/Geant4/CLHEP/Utility/defs.h \
-  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /usr/local/include/Geant4/G4RotationMatrix.hh \
-  /usr/local/include/Geant4/CLHEP/Vector/Rotation.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
-  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.h \
-  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.h \
-  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationX.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationX.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationY.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationY.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/Rotation.icc \
-  /usr/local/include/Geant4/G4Box.hh \
-  /usr/local/include/Geant4/G4GeomTypes.hh \
-  /usr/local/include/Geant4/G4GeomConfig.hh \
-  /usr/local/include/Geant4/G4CSGSolid.hh \
-  /usr/local/include/Geant4/G4VSolid.hh \
+  /usr/local/include/Geant4/G4Step.hh \
+  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
   /usr/local/include/Geant4/geomdefs.hh \
-  /usr/local/include/Geant4/G4VSolid.icc \
-  /usr/local/include/Geant4/G4Polyhedron.hh \
-  /usr/local/include/Geant4/HepPolyhedron.h \
-  /usr/local/include/Geant4/G4TwoVector.hh \
-  /usr/local/include/Geant4/CLHEP/Vector/TwoVector.h \
-  /usr/local/include/Geant4/CLHEP/Vector/TwoVector.icc \
-  /usr/local/include/Geant4/G4Point3D.hh \
-  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h \
-  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
-  /usr/local/include/Geant4/G4Normal3D.hh \
-  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h \
-  /usr/local/include/Geant4/G4Transform3D.hh \
-  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.h \
-  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc \
-  /usr/local/include/Geant4/CLHEP/Geometry/Vector3D.h \
-  /usr/local/include/Geant4/G4Visible.hh \
-  /usr/local/include/Geant4/G4Visible.icc \
-  /usr/local/include/Geant4/G4Box.icc \
-  /usr/local/include/Geant4/G4LogicalVolume.hh \
-  /usr/local/include/Geant4/G4Region.hh \
   /usr/local/include/Geant4/G4GeomSplitter.hh \
   /usr/local/include/Geant4/geomwdefs.hh \
   /usr/local/include/Geant4/G4AutoLock.hh \
@@ -1119,11 +1094,7 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/jthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
-  /usr/local/include/Geant4/G4Region.icc \
-  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
   /usr/local/include/Geant4/G4VPhysicalVolume.icc \
-  /usr/local/include/Geant4/G4LogicalVolume.icc \
-  /usr/local/include/Geant4/G4Step.hh \
   /usr/local/include/Geant4/G4StepPoint.hh \
   /usr/local/include/Geant4/G4Allocator.hh \
   /usr/local/include/Geant4/G4AllocatorPool.hh \
@@ -1134,6 +1105,13 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4TouchableHistory.hh \
   /usr/local/include/Geant4/G4NavigationHistory.hh \
   /usr/local/include/Geant4/G4AffineTransform.hh \
+  /usr/local/include/Geant4/G4Transform3D.hh \
+  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Vector3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h \
   /usr/local/include/Geant4/G4AffineTransform.icc \
   /usr/local/include/Geant4/G4NavigationLevel.hh \
   /usr/local/include/Geant4/G4NavigationLevelRep.hh \
@@ -1141,6 +1119,10 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4NavigationLevel.icc \
   /usr/local/include/Geant4/G4NavigationHistoryPool.hh \
   /usr/local/include/Geant4/G4NavigationHistory.icc \
+  /usr/local/include/Geant4/G4LogicalVolume.hh \
+  /usr/local/include/Geant4/G4Region.hh \
+  /usr/local/include/Geant4/G4Region.icc \
+  /usr/local/include/Geant4/G4LogicalVolume.icc \
   /usr/local/include/Geant4/G4TouchableHistory.icc \
   /usr/local/include/Geant4/G4ReferenceCountedHandle.hh \
   /usr/local/include/Geant4/G4StepPoint.icc \
@@ -1161,6 +1143,7 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4VUserTrackInformation.hh \
   /usr/local/include/Geant4/G4PhysicsModelCatalog.hh \
   /usr/local/include/Geant4/G4Track.icc \
+  /usr/local/include/Geant4/G4RunManager.hh \
   /usr/local/include/Geant4/G4Event.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /usr/local/include/Geant4/evtdefs.hh \
@@ -1173,7 +1156,6 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4TrajectoryContainer.hh \
   /usr/local/include/Geant4/G4VTrajectory.hh \
   /usr/local/include/Geant4/G4VUserEventInformation.hh \
-  /usr/local/include/Geant4/G4RunManager.hh \
   /usr/local/include/Geant4/G4EventManager.hh \
   /usr/local/include/Geant4/G4StackManager.hh \
   /usr/local/include/Geant4/G4UserStackingAction.hh \
@@ -1192,6 +1174,8 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4Navigator.hh \
   /usr/local/include/Geant4/G4NormalNavigation.hh \
   /usr/local/include/Geant4/G4VNavigation.hh \
+  /usr/local/include/Geant4/G4VSolid.hh \
+  /usr/local/include/Geant4/G4VSolid.icc \
   /usr/local/include/Geant4/G4AuxiliaryNavServices.hh \
   /usr/local/include/Geant4/G4AuxiliaryNavServices.icc \
   /usr/local/include/Geant4/G4NormalNavigation.icc \

@@ -201,6 +201,30 @@ src/CubeDetectorConstruction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube.dir/build.make CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.s
 .PHONY : src/CubeDetectorConstruction.cc.s
 
+src/CubeDetectorMessenger.o: src/CubeDetectorMessenger.cc.o
+.PHONY : src/CubeDetectorMessenger.o
+
+# target to build an object file
+src/CubeDetectorMessenger.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube.dir/build.make CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o
+.PHONY : src/CubeDetectorMessenger.cc.o
+
+src/CubeDetectorMessenger.i: src/CubeDetectorMessenger.cc.i
+.PHONY : src/CubeDetectorMessenger.i
+
+# target to preprocess a source file
+src/CubeDetectorMessenger.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube.dir/build.make CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.i
+.PHONY : src/CubeDetectorMessenger.cc.i
+
+src/CubeDetectorMessenger.s: src/CubeDetectorMessenger.cc.s
+.PHONY : src/CubeDetectorMessenger.s
+
+# target to generate assembly for a file
+src/CubeDetectorMessenger.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cube.dir/build.make CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.s
+.PHONY : src/CubeDetectorMessenger.cc.s
+
 src/CubeEventAction.o: src/CubeEventAction.cc.o
 .PHONY : src/CubeEventAction.o
 
@@ -315,6 +339,9 @@ help:
 	@echo "... src/CubeDetectorConstruction.o"
 	@echo "... src/CubeDetectorConstruction.i"
 	@echo "... src/CubeDetectorConstruction.s"
+	@echo "... src/CubeDetectorMessenger.o"
+	@echo "... src/CubeDetectorMessenger.i"
+	@echo "... src/CubeDetectorMessenger.s"
 	@echo "... src/CubeEventAction.o"
 	@echo "... src/CubeEventAction.i"
 	@echo "... src/CubeEventAction.s"
