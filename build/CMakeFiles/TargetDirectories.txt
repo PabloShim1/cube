@@ -1,0 +1,3 @@
+/Users/pavelsimko/Documents/cube/build/CMakeFiles/cube.dir
+/Users/pavelsimko/Documents/cube/build/CMakeFiles/edit_cache.dir
+/Users/pavelsimko/Documents/cube/build/CMakeFiles/rebuild_cache.dir
