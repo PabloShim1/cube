@@ -3624,8 +3624,6 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documen
   /usr/local/include/Geant4/G4Box.icc \
   /usr/local/include/Geant4/G4CSGSolid.hh \
   /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
-  /usr/local/include/Geant4/G4Color.hh \
-  /usr/local/include/Geant4/G4Colour.hh \
   /usr/local/include/Geant4/G4DCofThisEvent.hh \
   /usr/local/include/Geant4/G4DataVector.hh \
   /usr/local/include/Geant4/G4DataVector.icc \
@@ -3794,8 +3792,6 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documen
   /usr/local/include/Geant4/G4VUserEventInformation.hh \
   /usr/local/include/Geant4/G4VUserTrackInformation.hh \
   /usr/local/include/Geant4/G4VVolumeMaterialScanner.hh \
-  /usr/local/include/Geant4/G4VisAttributes.hh \
-  /usr/local/include/Geant4/G4VisAttributes.icc \
   /usr/local/include/Geant4/G4Visible.hh \
   /usr/local/include/Geant4/G4Visible.icc \
   /usr/local/include/Geant4/G4VoxelNavigation.hh \
@@ -3807,7 +3803,6 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documen
   /usr/local/include/Geant4/geomdefs.hh \
   /usr/local/include/Geant4/geomwdefs.hh \
   /usr/local/include/Geant4/globals.hh \
-  /usr/local/include/Geant4/graphics_reps_defs.hh \
   /usr/local/include/Geant4/pwdefs.hh \
   /usr/local/include/Geant4/rundefs.hh \
   /usr/local/include/Geant4/templates.hh \
@@ -8534,8 +8529,6 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src
   /usr/local/include/Geant4/CLHEP/Vector/RotationZ.icc \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/TwoVector.h \
-  /usr/local/include/Geant4/CLHEP/Vector/TwoVector.icc \
   /usr/local/include/Geant4/G4AccType.hh \
   /usr/local/include/Geant4/G4AccValue.hh \
   /usr/local/include/Geant4/G4AccValue.icc \
@@ -8557,9 +8550,6 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src
   /usr/local/include/Geant4/G4BinScheme.hh \
   /usr/local/include/Geant4/G4BlockingList.hh \
   /usr/local/include/Geant4/G4BlockingList.icc \
-  /usr/local/include/Geant4/G4Box.hh \
-  /usr/local/include/Geant4/G4Box.icc \
-  /usr/local/include/Geant4/G4CSGSolid.hh \
   /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
   /usr/local/include/Geant4/G4DCofThisEvent.hh \
   /usr/local/include/Geant4/G4DataVector.hh \
@@ -8583,9 +8573,7 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src
   /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
   /usr/local/include/Geant4/G4GenericFileManager.hh \
   /usr/local/include/Geant4/G4GenericFileManager.icc \
-  /usr/local/include/Geant4/G4GeomConfig.hh \
   /usr/local/include/Geant4/G4GeomSplitter.hh \
-  /usr/local/include/Geant4/G4GeomTypes.hh \
   /usr/local/include/Geant4/G4GlobalConfig.hh \
   /usr/local/include/Geant4/G4HCofThisEvent.hh \
   /usr/local/include/Geant4/G4HnInformation.hh \
@@ -8615,7 +8603,6 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src
   /usr/local/include/Geant4/G4Navigator.hh \
   /usr/local/include/Geant4/G4Navigator.icc \
   /usr/local/include/Geant4/G4NoProcess.hh \
-  /usr/local/include/Geant4/G4Normal3D.hh \
   /usr/local/include/Geant4/G4NormalNavigation.hh \
   /usr/local/include/Geant4/G4NormalNavigation.icc \
   /usr/local/include/Geant4/G4NtupleBookingManager.hh \
@@ -8639,8 +8626,6 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src
   /usr/local/include/Geant4/G4PhysicsVector.hh \
   /usr/local/include/Geant4/G4PhysicsVector.icc \
   /usr/local/include/Geant4/G4PhysicsVectorType.hh \
-  /usr/local/include/Geant4/G4Point3D.hh \
-  /usr/local/include/Geant4/G4Polyhedron.hh \
   /usr/local/include/Geant4/G4PrimaryParticle.hh \
   /usr/local/include/Geant4/G4PrimaryTransformer.hh \
   /usr/local/include/Geant4/G4PrimaryVertex.hh \
@@ -8709,7 +8694,6 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src
   /usr/local/include/Geant4/G4TrackingMessenger.hh \
   /usr/local/include/Geant4/G4TrajectoryContainer.hh \
   /usr/local/include/Geant4/G4Transform3D.hh \
-  /usr/local/include/Geant4/G4TwoVector.hh \
   /usr/local/include/Geant4/G4Types.hh \
   /usr/local/include/Geant4/G4UIcommand.hh \
   /usr/local/include/Geant4/G4UIdirectory.hh \
@@ -8746,12 +8730,9 @@ CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src
   /usr/local/include/Geant4/G4VUserEventInformation.hh \
   /usr/local/include/Geant4/G4VUserTrackInformation.hh \
   /usr/local/include/Geant4/G4VVolumeMaterialScanner.hh \
-  /usr/local/include/Geant4/G4Visible.hh \
-  /usr/local/include/Geant4/G4Visible.icc \
   /usr/local/include/Geant4/G4VoxelNavigation.hh \
   /usr/local/include/Geant4/G4VoxelNavigation.icc \
   /usr/local/include/Geant4/G4ios.hh \
-  /usr/local/include/Geant4/HepPolyhedron.h \
   /usr/local/include/Geant4/Randomize.hh \
   /usr/local/include/Geant4/evtdefs.hh \
   /usr/local/include/Geant4/geomdefs.hh \
@@ -10023,6 +10004,7 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cub
   /usr/local/include/Geant4/G4String.icc \
   /usr/local/include/Geant4/G4SubEvent.hh \
   /usr/local/include/Geant4/G4SubEventTrackStack.hh \
+  /usr/local/include/Geant4/G4SystemOfUnits.hh \
   /usr/local/include/Geant4/G4TH1ToolsManager.hh \
   /usr/local/include/Geant4/G4TH2ToolsManager.hh \
   /usr/local/include/Geant4/G4TH3ToolsManager.hh \
