@@ -16,6 +16,7 @@
 namespace cube {
 
 DetectorConstruction::DetectorConstruction() : G4VUserDetectorConstruction() {
+    // Инициализация параметров
     fTrayWallThickness = 1.5*mm;
     fProductSizeX = 900.0*mm;
     fProductSizeY = 400.0*mm;
@@ -57,22 +58,18 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
     auto world_logic = new G4LogicalVolume(world_s, fWorldMaterial, "World");
     auto world_p = new G4PVPlacement(0, G4ThreeVector(), world_logic, "World", 0, false, 0);
 
-    // 2. TRAY (Алюминиевый короб)
+    // 2. TRAY
     G4double tray_hx = (fProductSizeX + 2*fTrayWallThickness)/2.;
     G4double tray_hy = (fProductSizeY + 2*fTrayWallThickness)/2.;
     G4double tray_hz = (fProductThickness + fTrayWallThickness)/2.;
 
     G4Box* tray_s = new G4Box("Tray", tray_hx, tray_hy, tray_hz);
     auto tray_logic = new G4LogicalVolume(tray_s, fContainerMaterial, "Tray");
-    
-    // Ставим лоток так, чтобы Z=0 был центром лотка
     fTrayPhys = new G4PVPlacement(0, G4ThreeVector(0,0,0), tray_logic, "Tray", world_logic, false, 0);
 
     // 3. PRODUCT (Вложен в лоток)
     G4Box* prod_s = new G4Box("Product", fProductSizeX/2., fProductSizeY/2., fProductThickness/2.);
     fProductLogic = new G4LogicalVolume(prod_s, fFillMaterial, "Product");
-    
-    // Смещение продукции внутри лотка (на дно)
     G4double prod_z_in_tray = fTrayWallThickness / 2.0;
     new G4PVPlacement(0, G4ThreeVector(0,0, prod_z_in_tray), fProductLogic, "Product", tray_logic, false, 0);
 
@@ -91,7 +88,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
 
 void DetectorConstruction::SetProductThickness(G4double val) {
     fProductThickness = val;
-    // Уведомляем Geant4, что геометрия изменилась
     G4RunManager::GetRunManager()->ReinitializeGeometry();
 }
 

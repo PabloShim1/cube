@@ -4,12 +4,12 @@
 /run/initialize
 
 # --- Расчет 1 (40 мм) ---
-/cube/geometry/thickness 40 mm
+/cube/geometry/thickness 5 mm
 # Важно: ReinitializeGeometry вызывается внутри C++ кода команды thickness
 /run/beamOn 1000000
 /run/printProgress 10000
 
 # --- Расчет 2 (47 мм) ---
-/cube/geometry/thickness 47 mm
+/cube/geometry/thickness 7 mm
 /run/beamOn 1000000
 /run/printProgress 10000

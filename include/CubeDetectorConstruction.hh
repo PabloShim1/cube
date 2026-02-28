@@ -18,10 +18,8 @@ namespace cube {
     virtual ~DetectorConstruction();
     virtual G4VPhysicalVolume* Construct();
 
-    // Геттеры для других классов (Generator, Stepping, Messenger)
+    // Геттеры для PrimaryGenerator и SteppingAction
     G4LogicalVolume* GetProductLogic() const { return fProductLogic; }
-    G4VPhysicalVolume* GetTrayPhys() const { return fTrayPhys; }
-    
     G4double GetProductThickness() const { return fProductThickness; }
     G4double GetTrayWallThickness() const { return fTrayWallThickness; }
     G4double GetSSD() const { return fSSD; }
@@ -35,6 +33,7 @@ namespace cube {
 
     DetectorMessenger* fMessenger;
 
+    // Параметры геометрии
     G4double fProductThickness;
     G4double fTrayWallThickness;
     G4double fProductSizeX;
@@ -42,9 +41,11 @@ namespace cube {
     G4double fSSD;
     G4double fBulkDensity;
 
+    // Указатели на объемы
     G4LogicalVolume* fProductLogic = nullptr;
     G4VPhysicalVolume* fTrayPhys = nullptr;
     
+    // Указатели на материалы
     G4Material* fWorldMaterial = nullptr;
     G4Material* fContainerMaterial = nullptr;
     G4Material* fFillMaterial = nullptr;
