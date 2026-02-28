@@ -44,6 +44,7 @@ namespace cube {
     G4double fProductSizeY;
     G4double source_surface_distance;
     G4double margin_x, margin_y, margin_z;
+    G4double fBulkDensity;
 
     G4VPhysicalVolume* world_phys = nullptr;
     G4LogicalVolume* world_logic = nullptr;

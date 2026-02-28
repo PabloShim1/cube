@@ -2,62 +2,46 @@
 #include "CubeDetectorConstruction.hh"
 #include "G4RunManager.hh"
 #include "G4Run.hh"
-#include "G4SystemOfUnits.hh"
 #include "G4AnalysisManager.hh"
-#include "G4Box.hh"
+#include "G4SystemOfUnits.hh"
 #include <sstream>
-#include <vector>
 
 namespace cube {
 
-RunAction::RunAction() {
-  auto analysis = G4AnalysisManager::Instance();
-  analysis->SetDefaultFileType("root");
-  analysis->SetFirstHistoId(0); // Начинаем счет с нуля
+RunAction::RunAction() : G4UserRunAction() {
+    auto analysis = G4AnalysisManager::Instance();
+    analysis->SetDefaultFileType("root");
+    
+    // Явно начинаем ID с нуля для всех типов
+    analysis->SetFirstHistoId(0);
+
+    // СОЗДАЕМ ГИСТОГРАММЫ ОДИН РАЗ В КОНСТРУКТОРЕ
+    // Делаем сетку с запасом (например, до 1000 мм), чтобы не менять её на лету
+    // H3 (3D доза) -> получит ID 0
+    analysis->CreateH3("vdd", "3D Dose", 100, -500, 500, 100, -250, 250, 100, -100, 100); 
+    
+    // H1 (Глубинное распределение) -> ТОЖЕ получит ID 0
+    analysis->CreateH1("pdd", "PDD Profile", 1000, 0, 1000); 
 }
 
 RunAction::~RunAction() {}
 
 void RunAction::BeginOfRunAction(const G4Run* run) {
-  auto analysis = G4AnalysisManager::Instance();
-  const DetectorConstruction* det = static_cast<const DetectorConstruction*>(
-    G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+    auto analysis = G4AnalysisManager::Instance();
+    
+    // Открываем файл. Имя будет Output_Run_0.root, Output_Run_1.root и т.д.
+    std::stringstream ss;
+    ss << "Output_Run_" << run->GetRunID();
+    analysis->OpenFile(ss.str());
 
-  // Получаем размеры продукта
-  G4ThreeVector worldPos = det->GetTrayPhys()->GetTranslation() + det->GetProductPhys()->GetTranslation();
-  auto solid = static_cast<G4Box*>(det->GetProductPhys()->GetLogicalVolume()->GetSolid());
-
-  G4double xh = solid->GetXHalfLength(), yh = solid->GetYHalfLength(), zh = solid->GetZHalfLength();
-  
-  // Границы для сетки
-  G4double xmin = worldPos.x() - xh, xmax = worldPos.x() + xh;
-  G4double ymin = worldPos.y() - yh, ymax = worldPos.y() + yh;
-  G4double zmin = worldPos.z() - zh, zmax = worldPos.z() + zh;
-
-  // Создаем сетку
-  std::vector<G4double> xe, ye, ze;
-  for(G4double x = xmin; x <= xmax + 0.1*mm; x += 1.0*cm) xe.push_back(x);
-  for(G4double y = ymin; y <= ymax + 0.1*mm; y += 1.0*cm) ye.push_back(y);
-  for(G4double z = zmin; z <= zmax + 0.1*mm; z += 1.0*mm) ze.push_back(z);
-
-  std::stringstream ss;
-  ss << "Output_Run_" << run->GetRunID();
-  analysis->OpenFile(ss.str());
-  
-  // ВАЖНО: ПОРЯДОК ОПРЕДЕЛЯЕТ ID
-  // CreateH3 -> ID 0
-  analysis->CreateH3("vdd", "Volume-Dose", xe, ye, ze);
-  // CreateH1 -> ID 1
-  analysis->CreateH1("pdd", "PDD Profile", ze);
-
-  G4cout << "### Run " << run->GetRunID() << " started. Histograms 0(3D) and 1(1D) created." << G4endl;
+    // ВНИМАНИЕ: Мы НЕ вызываем SetH1/SetH3 здесь. 
+    // Это предотвращает зависание при 32+ потоках.
 }
 
 void RunAction::EndOfRunAction(const G4Run*) {
-  auto analysis = G4AnalysisManager::Instance();
-  analysis->Write();
-  analysis->CloseFile();
-  analysis->Clear(); 
+    auto analysis = G4AnalysisManager::Instance();
+    analysis->Write();
+    analysis->CloseFile();
 }
 
 } // namespace cube

@@ -19,9 +19,14 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction() { delete fParticleGun; }
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event) {
     auto det = static_cast<const DetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
     
-    // Считаем строго по геттерам из DetectorConstruction
-    G4double zCenter = det->GetTrayPhys()->GetTranslation().z() + (det->GetTrayWallThickness()/2.0);
-    G4double zSource = zCenter + (det->GetProductThickness()/2.0) + det->GetSSD();
+    // Позиция лотка в мире
+    G4double zTrayWorld = det->GetTrayPhys()->GetTranslation().z();
+    // Верхняя грань продукта в локальных координатах лотка = z_shift_inner + thickness/2
+    // В мире это: zTrayWorld + (fTrayWallThickness/2) + (fProductThickness/2)
+    G4double zSurfaceWorld = zTrayWorld + (det->GetTrayWallThickness()/2.0) + (det->GetProductThickness()/2.0);
+    
+    // Источник на расстоянии SSD от поверхности
+    G4double zSource = zSurfaceWorld + det->GetSSD();
     
     G4double x0 = (G4UniformRand()-0.5) * det->GetProductSizeX();
     G4double y0 = (G4UniformRand()-0.5) * det->GetProductSizeY();
