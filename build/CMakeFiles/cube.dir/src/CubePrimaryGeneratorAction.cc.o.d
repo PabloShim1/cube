@@ -1042,6 +1042,35 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /usr/local/include/Geant4/G4ParticleMomentum.hh \
   /Users/pavelsimko/Documents/cube/include/CubeDetectorConstruction.hh \
   /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+  /usr/local/include/Geant4/G4RunManager.hh \
+  /usr/local/include/Geant4/G4Event.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
+  /usr/local/include/Geant4/evtdefs.hh \
+  /usr/local/include/Geant4/G4HCofThisEvent.hh \
+  /usr/local/include/Geant4/G4VHitsCollection.hh \
+  /usr/local/include/Geant4/G4DCofThisEvent.hh \
+  /usr/local/include/Geant4/G4VDigiCollection.hh \
+  /usr/local/include/Geant4/G4TrajectoryContainer.hh \
+  /usr/local/include/Geant4/G4VTrajectory.hh \
+  /usr/local/include/Geant4/G4VUserEventInformation.hh \
+  /usr/local/include/Geant4/G4EventManager.hh \
+  /usr/local/include/Geant4/G4StackManager.hh \
+  /usr/local/include/Geant4/G4UserStackingAction.hh \
+  /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /usr/local/include/Geant4/G4StackedTrack.hh \
+  /usr/local/include/Geant4/G4TrackStack.hh \
+  /usr/local/include/Geant4/G4SmartTrackStack.hh \
+  /usr/local/include/Geant4/G4SubEventTrackStack.hh \
+  /usr/local/include/Geant4/G4SubEvent.hh \
+  /usr/local/include/Geant4/G4Track.hh \
+  /usr/local/include/Geant4/trkdefs.hh \
+  /usr/local/include/Geant4/G4LogicalVolume.hh \
+  /usr/local/include/Geant4/G4Region.hh \
+  /usr/local/include/Geant4/G4GeomSplitter.hh \
+  /usr/local/include/Geant4/geomwdefs.hh \
+  /usr/local/include/Geant4/G4Region.icc \
+  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
+  /usr/local/include/Geant4/geomdefs.hh \
   /usr/local/include/Geant4/G4RotationMatrix.hh \
   /usr/local/include/Geant4/CLHEP/Vector/Rotation.h \
   /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
@@ -1057,6 +1086,40 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /usr/local/include/Geant4/CLHEP/Vector/RotationZ.h \
   /usr/local/include/Geant4/CLHEP/Vector/RotationZ.icc \
   /usr/local/include/Geant4/CLHEP/Vector/Rotation.icc \
+  /usr/local/include/Geant4/G4VPhysicalVolume.icc \
+  /usr/local/include/Geant4/G4LogicalVolume.icc \
+  /usr/local/include/Geant4/G4DynamicParticle.hh \
+  /usr/local/include/Geant4/G4ElectronOccupancy.hh \
+  /usr/local/include/Geant4/G4Log.hh \
+  /usr/local/include/Geant4/G4LorentzVector.hh \
+  /usr/local/include/Geant4/G4DynamicParticle.icc \
+  /usr/local/include/Geant4/G4TrackStatus.hh \
+  /usr/local/include/Geant4/G4TouchableHandle.hh \
+  /usr/local/include/Geant4/G4VTouchable.hh \
+  /usr/local/include/Geant4/G4TouchableHistory.hh \
+  /usr/local/include/Geant4/G4NavigationHistory.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
+  /usr/local/include/Geant4/G4AffineTransform.hh \
+  /usr/local/include/Geant4/G4Transform3D.hh \
+  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Vector3D.h \
+  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h \
+  /usr/local/include/Geant4/G4AffineTransform.icc \
+  /usr/local/include/Geant4/G4NavigationLevel.hh \
+  /usr/local/include/Geant4/G4NavigationLevelRep.hh \
+  /usr/local/include/Geant4/G4NavigationLevelRep.icc \
+  /usr/local/include/Geant4/G4NavigationLevel.icc \
+  /usr/local/include/Geant4/G4NavigationHistoryPool.hh \
+  /usr/local/include/Geant4/G4NavigationHistory.icc \
+  /usr/local/include/Geant4/G4TouchableHistory.icc \
+  /usr/local/include/Geant4/G4ReferenceCountedHandle.hh \
+  /usr/local/include/Geant4/G4VUserTrackInformation.hh \
+  /usr/local/include/Geant4/G4PhysicsModelCatalog.hh \
   /usr/local/include/Geant4/G4Material.hh \
   /usr/local/include/Geant4/G4Element.hh \
   /usr/local/include/Geant4/G4ElementTable.hh \
@@ -1089,7 +1152,6 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /usr/local/include/Geant4/G4Log.hh \
   /usr/local/include/Geant4/G4PhysicsVectorType.hh \
   /usr/local/include/Geant4/G4PhysicsVector.icc \
   /usr/local/include/Geant4/G4MaterialTable.hh \
@@ -1097,68 +1159,6 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /usr/local/include/Geant4/G4OrderedTable.hh \
   /usr/local/include/Geant4/G4DataVector.hh \
   /usr/local/include/Geant4/G4DataVector.icc \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /usr/local/include/Geant4/G4RunManager.hh \
-  /usr/local/include/Geant4/G4Event.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
-  /usr/local/include/Geant4/evtdefs.hh \
-  /usr/local/include/Geant4/G4HCofThisEvent.hh \
-  /usr/local/include/Geant4/G4VHitsCollection.hh \
-  /usr/local/include/Geant4/G4DCofThisEvent.hh \
-  /usr/local/include/Geant4/G4VDigiCollection.hh \
-  /usr/local/include/Geant4/G4TrajectoryContainer.hh \
-  /usr/local/include/Geant4/G4VTrajectory.hh \
-  /usr/local/include/Geant4/G4VUserEventInformation.hh \
-  /usr/local/include/Geant4/G4EventManager.hh \
-  /usr/local/include/Geant4/G4StackManager.hh \
-  /usr/local/include/Geant4/G4UserStackingAction.hh \
-  /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
-  /usr/local/include/Geant4/G4StackedTrack.hh \
-  /usr/local/include/Geant4/G4TrackStack.hh \
-  /usr/local/include/Geant4/G4SmartTrackStack.hh \
-  /usr/local/include/Geant4/G4SubEventTrackStack.hh \
-  /usr/local/include/Geant4/G4SubEvent.hh \
-  /usr/local/include/Geant4/G4Track.hh \
-  /usr/local/include/Geant4/trkdefs.hh \
-  /usr/local/include/Geant4/G4LogicalVolume.hh \
-  /usr/local/include/Geant4/G4Region.hh \
-  /usr/local/include/Geant4/G4GeomSplitter.hh \
-  /usr/local/include/Geant4/geomwdefs.hh \
-  /usr/local/include/Geant4/G4Region.icc \
-  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
-  /usr/local/include/Geant4/geomdefs.hh \
-  /usr/local/include/Geant4/G4VPhysicalVolume.icc \
-  /usr/local/include/Geant4/G4LogicalVolume.icc \
-  /usr/local/include/Geant4/G4DynamicParticle.hh \
-  /usr/local/include/Geant4/G4ElectronOccupancy.hh \
-  /usr/local/include/Geant4/G4LorentzVector.hh \
-  /usr/local/include/Geant4/G4DynamicParticle.icc \
-  /usr/local/include/Geant4/G4TrackStatus.hh \
-  /usr/local/include/Geant4/G4TouchableHandle.hh \
-  /usr/local/include/Geant4/G4VTouchable.hh \
-  /usr/local/include/Geant4/G4TouchableHistory.hh \
-  /usr/local/include/Geant4/G4NavigationHistory.hh \
-  /usr/local/include/Geant4/G4AffineTransform.hh \
-  /usr/local/include/Geant4/G4Transform3D.hh \
-  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.h \
-  /usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc \
-  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h \
-  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
-  /usr/local/include/Geant4/CLHEP/Geometry/Vector3D.h \
-  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h \
-  /usr/local/include/Geant4/G4AffineTransform.icc \
-  /usr/local/include/Geant4/G4NavigationLevel.hh \
-  /usr/local/include/Geant4/G4NavigationLevelRep.hh \
-  /usr/local/include/Geant4/G4NavigationLevelRep.icc \
-  /usr/local/include/Geant4/G4NavigationLevel.icc \
-  /usr/local/include/Geant4/G4NavigationHistoryPool.hh \
-  /usr/local/include/Geant4/G4NavigationHistory.icc \
-  /usr/local/include/Geant4/G4TouchableHistory.icc \
-  /usr/local/include/Geant4/G4ReferenceCountedHandle.hh \
-  /usr/local/include/Geant4/G4VUserTrackInformation.hh \
-  /usr/local/include/Geant4/G4PhysicsModelCatalog.hh \
   /usr/local/include/Geant4/G4Track.icc \
   /usr/local/include/Geant4/G4Step.hh \
   /usr/local/include/Geant4/G4StepPoint.hh \

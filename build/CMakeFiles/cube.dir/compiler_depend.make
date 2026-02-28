@@ -3618,17 +3618,16 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documen
   /usr/local/include/Geant4/G4AuxiliaryNavServices.icc \
   /usr/local/include/Geant4/G4BlockingList.hh \
   /usr/local/include/Geant4/G4BlockingList.icc \
-  /usr/local/include/Geant4/G4BooleanSolid.hh \
-  /usr/local/include/Geant4/G4BooleanSolid.icc \
   /usr/local/include/Geant4/G4Box.hh \
   /usr/local/include/Geant4/G4Box.icc \
   /usr/local/include/Geant4/G4CSGSolid.hh \
   /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /usr/local/include/Geant4/G4Color.hh \
+  /usr/local/include/Geant4/G4Colour.hh \
   /usr/local/include/Geant4/G4DCofThisEvent.hh \
   /usr/local/include/Geant4/G4DataVector.hh \
   /usr/local/include/Geant4/G4DataVector.icc \
   /usr/local/include/Geant4/G4DensityEffectCalculator.hh \
-  /usr/local/include/Geant4/G4DisplacedSolid.hh \
   /usr/local/include/Geant4/G4DynamicParticle.hh \
   /usr/local/include/Geant4/G4DynamicParticle.icc \
   /usr/local/include/Geant4/G4ElectronOccupancy.hh \
@@ -3745,7 +3744,6 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documen
   /usr/local/include/Geant4/G4String.icc \
   /usr/local/include/Geant4/G4SubEvent.hh \
   /usr/local/include/Geant4/G4SubEventTrackStack.hh \
-  /usr/local/include/Geant4/G4SubtractionSolid.hh \
   /usr/local/include/Geant4/G4SystemOfUnits.hh \
   /usr/local/include/Geant4/G4Threading.hh \
   /usr/local/include/Geant4/G4ThreeVector.hh \
@@ -3770,7 +3768,6 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documen
   /usr/local/include/Geant4/G4UserStackingAction.hh \
   /usr/local/include/Geant4/G4UserSteppingAction.hh \
   /usr/local/include/Geant4/G4UserTrackingAction.hh \
-  /usr/local/include/Geant4/G4VBooleanProcessor.hh \
   /usr/local/include/Geant4/G4VDigiCollection.hh \
   /usr/local/include/Geant4/G4VExternalNavigation.hh \
   /usr/local/include/Geant4/G4VHitsCollection.hh \
@@ -3792,6 +3789,8 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documen
   /usr/local/include/Geant4/G4VUserEventInformation.hh \
   /usr/local/include/Geant4/G4VUserTrackInformation.hh \
   /usr/local/include/Geant4/G4VVolumeMaterialScanner.hh \
+  /usr/local/include/Geant4/G4VisAttributes.hh \
+  /usr/local/include/Geant4/G4VisAttributes.icc \
   /usr/local/include/Geant4/G4Visible.hh \
   /usr/local/include/Geant4/G4Visible.icc \
   /usr/local/include/Geant4/G4VoxelNavigation.hh \
@@ -3803,6 +3802,7 @@ CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documen
   /usr/local/include/Geant4/geomdefs.hh \
   /usr/local/include/Geant4/geomwdefs.hh \
   /usr/local/include/Geant4/globals.hh \
+  /usr/local/include/Geant4/graphics_reps_defs.hh \
   /usr/local/include/Geant4/pwdefs.hh \
   /usr/local/include/Geant4/rundefs.hh \
   /usr/local/include/Geant4/templates.hh \
@@ -3819,7 +3819,6 @@ CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: /Users/pavelsimko/Documents/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
@@ -3827,7 +3826,6 @@ CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: /Users/pavelsimko/Documents/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale_posix2008.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
@@ -3856,7 +3854,6 @@ CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: /Users/pavelsimko/Documents/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h \
@@ -4097,7 +4094,6 @@ CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: /Users/pavelsimko/Documents/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/statically_widen.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h \
@@ -4159,22 +4155,6 @@ CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: /Users/pavelsimko/Documents/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/container_adaptor.h \
@@ -4604,9 +4584,7 @@ CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: /Users/pavelsimko/Documents/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
@@ -4800,53 +4778,14 @@ CMakeFiles/cube.dir/src/CubeDetectorMessenger.cc.o: /Users/pavelsimko/Documents/
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/pavelsimko/Documents/cube/include/CubeDetectorConstruction.hh \
   /Users/pavelsimko/Documents/cube/include/CubeDetectorMessenger.hh \
-  /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
-  /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
   /usr/local/include/Geant4/CLHEP/Utility/defs.h \
-  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.h \
-  /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.h \
-  /usr/local/include/Geant4/CLHEP/Vector/LorentzVector.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/Rotation.h \
-  /usr/local/include/Geant4/CLHEP/Vector/Rotation.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationX.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationX.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationY.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationY.icc \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.h \
-  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.icc \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
   /usr/local/include/Geant4/G4ApplicationState.hh \
-  /usr/local/include/Geant4/G4DataVector.hh \
-  /usr/local/include/Geant4/G4DataVector.icc \
-  /usr/local/include/Geant4/G4DensityEffectCalculator.hh \
-  /usr/local/include/Geant4/G4Element.hh \
-  /usr/local/include/Geant4/G4ElementTable.hh \
-  /usr/local/include/Geant4/G4ElementVector.hh \
   /usr/local/include/Geant4/G4EnvironmentUtils.hh \
   /usr/local/include/Geant4/G4Exception.hh \
   /usr/local/include/Geant4/G4ExceptionSeverity.hh \
   /usr/local/include/Geant4/G4GlobalConfig.hh \
-  /usr/local/include/Geant4/G4IonisParamElm.hh \
-  /usr/local/include/Geant4/G4IonisParamMat.hh \
-  /usr/local/include/Geant4/G4Isotope.hh \
-  /usr/local/include/Geant4/G4IsotopeVector.hh \
-  /usr/local/include/Geant4/G4Log.hh \
-  /usr/local/include/Geant4/G4Material.hh \
-  /usr/local/include/Geant4/G4MaterialPropertiesIndex.hh \
-  /usr/local/include/Geant4/G4MaterialPropertiesTable.hh \
-  /usr/local/include/Geant4/G4MaterialPropertyVector.hh \
-  /usr/local/include/Geant4/G4MaterialTable.hh \
-  /usr/local/include/Geant4/G4OrderedTable.hh \
-  /usr/local/include/Geant4/G4PhysicsFreeVector.hh \
-  /usr/local/include/Geant4/G4PhysicsVector.hh \
-  /usr/local/include/Geant4/G4PhysicsVector.icc \
-  /usr/local/include/Geant4/G4PhysicsVectorType.hh \
-  /usr/local/include/Geant4/G4RotationMatrix.hh \
-  /usr/local/include/Geant4/G4SandiaTable.hh \
   /usr/local/include/Geant4/G4String.hh \
   /usr/local/include/Geant4/G4String.icc \
   /usr/local/include/Geant4/G4ThreeVector.hh \
@@ -10920,8 +10859,6 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cub
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ctime:
 
-/usr/local/include/Geant4/G4VBooleanProcessor.hh:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstring:
@@ -11311,8 +11248,6 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cub
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/comparison.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h:
-
-/usr/local/include/Geant4/G4BooleanSolid.hh:
 
 /usr/local/include/Geant4/G4PseudoScene.hh:
 
@@ -12082,8 +12017,6 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cub
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/gamma.h:
 
-/usr/local/include/Geant4/G4DisplacedSolid.hh:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h:
 
 /usr/local/include/Geant4/G4Trd.icc:
@@ -12520,8 +12453,6 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cub
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h:
 
-/usr/local/include/Geant4/G4SubtractionSolid.hh:
-
 /usr/local/include/Geant4/G4PDefManager.hh:
 
 /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh:
@@ -12577,8 +12508,6 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cub
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h:
-
-/usr/local/include/Geant4/G4BooleanSolid.icc:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:
 
