@@ -1,119 +1,93 @@
 #include "CubeDetectorConstruction.hh"
-
+#include "CubeDetectorMessenger.hh"
 #include "G4RunManager.hh"
 #include "G4NistManager.hh"
 #include "G4Box.hh"
-#include "G4Cons.hh"
-#include "G4Orb.hh"
-#include "G4Sphere.hh"
-#include "G4Trd.hh"
 #include "G4LogicalVolume.hh"
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4VisAttributes.hh"
+#include "G4SubtractionSolid.hh"
+#include "G4PhysicalVolumeStore.hh"
+#include "G4LogicalVolumeStore.hh"
+#include "G4SolidStore.hh"
+#include "G4GeometryManager.hh"
 
-namespace cube
-{
+namespace cube {
 
-  DetectorConstruction::DetectorConstruction()
-  {
-    this->margin_x = 5 * cm;
-    this->margin_y = 5 * cm;
-    this->margin_z = 5 * cm;
+DetectorConstruction::DetectorConstruction() {
+    margin_x = 5*cm; margin_y = 5*cm; margin_z = 10*cm;
+    fTrayWallThickness = 1.5*mm;
+    fProductSizeX = 890.0*mm;
+    fProductSizeY = 390.0*mm;
+    fProductThickness = 48.0*mm; 
+    source_surface_distance = 60*cm; 
+    fMessenger = new DetectorMessenger(this);
+}
 
-    this->cube_size_x = 58 * cm;
-    this->cube_size_y = 37 * cm;
-    this->cube_size_z = 13 * cm;
+DetectorConstruction::~DetectorConstruction() { delete fMessenger; }
 
-    // this->source_surface_distance = 100 * cm;
-    this->source_surface_distance = 60*cm-this->cube_size_z;
-  }
+void DetectorConstruction::ConstructMaterials() {
+    G4NistManager* nist = G4NistManager::Instance();
+    fWorldMaterial = nist->FindOrBuildMaterial("G4_AIR");
+    fContainerMaterial = nist->FindOrBuildMaterial("G4_Al");
+    // Используем воду как заполнитель для теста, она хорошо поглощает энергию
+    fFillMaterial = nist->FindOrBuildMaterial("G4_WATER"); 
+}
 
-  DetectorConstruction::~DetectorConstruction()
-  {
-  }
+G4VPhysicalVolume* DetectorConstruction::Construct() {
+    // 1. Полная очистка перед перестроением
+    G4GeometryManager::GetInstance()->OpenGeometry();
+    G4PhysicalVolumeStore::GetInstance()->Clean();
+    G4LogicalVolumeStore::GetInstance()->Clean();
+    G4SolidStore::GetInstance()->Clean();
 
-  //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+    ConstructMaterials();
 
-  void DetectorConstruction::ConstructMaterials()
-  {
-    G4NistManager *nist = G4NistManager::Instance();
-    this->world_material = nist->FindOrBuildMaterial("G4_AIR");
-    // this->cube_material = nist->BuildMaterialWithNewDensity("YOU_MATERIAL", "G4_POLYPROPELENE", 1.0 * g / cm3);
-    this->cube_material = nist->BuildMaterialWithNewDensity("YOU_MATERIAL", "G4_CELLULOSE_CELLOPHANE", 0.189 * g / cm3);
+    // 2. Расчет размеров
+    G4double trayOuterZ = fProductThickness + fTrayWallThickness;
+    G4double worldZ = trayOuterZ + margin_z + source_surface_distance;
+
+    // Позиция центра лотка в мире
+    cube_translate = G4ThreeVector(0, 0, -source_surface_distance/2.0);
+
+    // 3. Создание Мира
+    G4Box* world_solid = new G4Box("World", (fProductSizeX+margin_x)/2., (fProductSizeY+margin_y)/2., worldZ/2.);
+    world_logic = new G4LogicalVolume(world_solid, fWorldMaterial, "WorldLogic");
+    world_phys = new G4PVPlacement(0, G4ThreeVector(), world_logic, "WorldPhys", 0, false, 0);
+
+    // 4. Создание Лотка (Tray)
+    G4Box* tray_outer = new G4Box("TrayOuter", (fProductSizeX + 2*fTrayWallThickness)/2., (fProductSizeY + 2*fTrayWallThickness)/2., trayOuterZ/2.);
+    G4Box* tray_inner = new G4Box("TrayInner", fProductSizeX/2., fProductSizeY/2., fProductThickness/2.);
     
-  }
+    // Смещение полости внутри лотка, чтобы дно было целым
+    G4double z_shift_inner = fTrayWallThickness / 2.0;
+    G4SubtractionSolid* tray_solid = new G4SubtractionSolid("TraySolid", tray_outer, tray_inner, 0, G4ThreeVector(0,0,z_shift_inner));
 
-  void DetectorConstruction::ComputeTranslations()
-  {
-    this->world_size_x = this->margin_x + this->cube_size_x;
-    this->world_size_y = this->margin_y + this->cube_size_y;
-    this->world_size_z = this->margin_z + this->cube_size_z + this->source_surface_distance;
+    fTrayLogic = new G4LogicalVolume(tray_solid, fContainerMaterial, "TrayLogic");
+    fTrayPhys = new G4PVPlacement(0, cube_translate, fTrayLogic, "TrayPhys", world_logic, false, 0, true);
 
-    this->cube_translate = G4ThreeVector(0, 0, -this->source_surface_distance / 2.0);
-  }
+    // 5. Создание Продукта (Product) - ТО, ЧТО МЫ СЧИТАЕМ
+    G4Box* product_solid = new G4Box("Product", fProductSizeX/2., fProductSizeY/2., fProductThickness/2.);
+    fProductLogic = new G4LogicalVolume(product_solid, fFillMaterial, "ProductLogic");
+    
+    // Размещаем продукт ПРЯМО в полости лотка
+    fProductPhys = new G4PVPlacement(0, G4ThreeVector(0,0,z_shift_inner), fProductLogic, "ProductPhys", fTrayLogic, false, 0, true);
 
-  void DetectorConstruction::ConstructSolids()
-  {
-    this->world_solid = new G4Box("World", this->world_size_x / 2.0, this->world_size_y / 2.0, this->world_size_z / 2.0);
-    this->cube_solid = new G4Box("Cube", this->cube_size_x / 2.0, this->cube_size_y / 2.0, this->cube_size_z / 2.0);
-  }
+    SetUpVisAttributes();
+    return world_phys;
+}
 
-  void DetectorConstruction::ConstructLogicals()
-  {
-    this->world_logic = new G4LogicalVolume(this->world_solid, this->world_material, "World");
-    this->cube_logic = new G4LogicalVolume(this->cube_solid, this->cube_material, "Cube");
-  }
+void DetectorConstruction::SetProductThickness(G4double val) {
+    fProductThickness = val;
+    // Сообщаем менеджеру, что геометрия изменилась
+    G4RunManager::GetRunManager()->ReinitializeGeometry();
+}
 
-  void DetectorConstruction::ConstructPhysicals()
-  {
-    this->world_phys = new G4PVPlacement(
-        nullptr,
-        G4ThreeVector(),
-        this->world_logic,
-        "World",
-        nullptr,
-        false,
-        0,
-        true);
-
-    this->cube_phys = new G4PVPlacement(
-        this->cube_rotation,
-        this->cube_translate,
-        this->cube_logic,
-        "Cube",
-        this->world_logic,
-        false,
-        0,
-        true);
-  }
-
-  void DetectorConstruction::SetUpVisAttributes()
-  {
-    G4VisAttributes *world_vis = new G4VisAttributes();
-    world_vis->SetForceWireframe(true);
-    world_vis->SetVisibility(false);
-    this->world_logic->SetVisAttributes(world_vis);
-
-    G4VisAttributes *cube_vis = new G4VisAttributes(G4Colour(0., 0., 1., 0.5));
-    cube_vis->SetVisibility(true);
-    this->cube_logic->SetVisAttributes(cube_vis);
-  }
-
-  //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-  G4VPhysicalVolume *DetectorConstruction::Construct()
-  {
-    this->ConstructMaterials();
-    this->ComputeTranslations();
-
-    this->ConstructSolids();
-    this->ConstructLogicals();
-    this->ConstructPhysicals();
-
-    this->SetUpVisAttributes();
-
-    return this->world_phys;
-  }
+void DetectorConstruction::SetUpVisAttributes() {
+    world_logic->SetVisAttributes(G4VisAttributes::GetInvisible());
+    fTrayLogic->SetVisAttributes(new G4VisAttributes(G4Colour(0.5, 0.5, 0.5, 0.3)));
+    fProductLogic->SetVisAttributes(new G4VisAttributes(G4Colour(0, 0, 1, 0.6)));
+}
 
 }

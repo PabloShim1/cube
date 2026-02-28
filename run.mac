@@ -1,7 +1,10 @@
 /run/initialize
-#
-/gun/particle e-
-/gun/energy 10 MeV
-#
-/run/printProgress 100000
-/run/beamOn 10000000
+
+# Расчет 1 
+/cube/geometry/thickness 5 mm
+/run/beamOn 10000
+
+# Расчет 2
+/cube/geometry/thickness 10 mm
+/run/beamOn 10000
+
