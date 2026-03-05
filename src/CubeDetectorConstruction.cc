@@ -16,13 +16,12 @@
 namespace cube {
 
 DetectorConstruction::DetectorConstruction() : G4VUserDetectorConstruction() {
-    // Инициализация параметров
     fTrayWallThickness = 1.5*mm;
     fProductSizeX = 900.0*mm;
     fProductSizeY = 400.0*mm;
     fProductThickness = 48.0*mm; 
     fSSD = 60.0*cm; 
-    fBulkDensity = 0.55 * g/cm3;
+    fBulkDensity = 0.55 * g/cm3; 
     fMessenger = new DetectorMessenger(this);
 }
 
@@ -35,13 +34,12 @@ void DetectorConstruction::ConstructMaterials() {
     fWorldMaterial = nist->FindOrBuildMaterial("G4_AIR");
     fContainerMaterial = nist->FindOrBuildMaterial("G4_Al");
 
-    if (!G4Material::GetMaterial("ProductMaterial", false)) {
-        fFillMaterial = new G4Material("ProductMaterial", fBulkDensity, 3);
-        fFillMaterial->AddElement(nist->FindOrBuildElement("C"), 45*perCent);
-        fFillMaterial->AddElement(nist->FindOrBuildElement("H"), 7*perCent);
-        fFillMaterial->AddElement(nist->FindOrBuildElement("O"), 48*perCent);
+    if (!G4Material::GetMaterial("PTFE_Powder", false)) {
+        fFillMaterial = new G4Material("PTFE_Powder", fBulkDensity, 2);
+        fFillMaterial->AddElement(nist->FindOrBuildElement("C"), 24*perCent);
+        fFillMaterial->AddElement(nist->FindOrBuildElement("F"), 76*perCent);
     } else {
-        fFillMaterial = G4Material::GetMaterial("ProductMaterial");
+        fFillMaterial = G4Material::GetMaterial("PTFE_Powder");
     }
 }
 
@@ -58,28 +56,47 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
     auto world_logic = new G4LogicalVolume(world_s, fWorldMaterial, "World");
     auto world_p = new G4PVPlacement(0, G4ThreeVector(), world_logic, "World", 0, false, 0);
 
-    // 2. TRAY
-    G4double tray_hx = (fProductSizeX + 2*fTrayWallThickness)/2.;
-    G4double tray_hy = (fProductSizeY + 2*fTrayWallThickness)/2.;
-    G4double tray_hz = (fProductThickness + fTrayWallThickness)/2.;
+    // Технический зазор
+    G4double gap = 10.0*micrometer;
 
-    G4Box* tray_s = new G4Box("Tray", tray_hx, tray_hy, tray_hz);
-    auto tray_logic = new G4LogicalVolume(tray_s, fContainerMaterial, "Tray");
-    fTrayPhys = new G4PVPlacement(0, G4ThreeVector(0,0,0), tray_logic, "Tray", world_logic, false, 0);
+    // 2. PRODUCT (Ядро системы)
+    // Центр в 0. Верх в +fProductThickness/2, низ в -fProductThickness/2
+    G4Box* prod_s = new G4Box("Product_Solid", fProductSizeX/2., fProductSizeY/2., fProductThickness/2.0);
+    fProductLogic = new G4LogicalVolume(prod_s, fFillMaterial, "Product_Logic");
+    new G4PVPlacement(0, G4ThreeVector(0,0,0), fProductLogic, "Product_Phys", world_logic, false, 0);
 
-    // 3. PRODUCT (Вложен в лоток)
-    G4Box* prod_s = new G4Box("Product", fProductSizeX/2., fProductSizeY/2., fProductThickness/2.);
-    fProductLogic = new G4LogicalVolume(prod_s, fFillMaterial, "Product");
-    G4double prod_z_in_tray = fTrayWallThickness / 2.0;
-    new G4PVPlacement(0, G4ThreeVector(0,0, prod_z_in_tray), fProductLogic, "Product", tray_logic, false, 0);
+    // 3. TRAY WALLS (Окружаем продукцию)
+    // ДНО: Ставим ПОД продукцию (в отрицательную область Z)
+    G4double bottom_hz = fTrayWallThickness / 2.0;
+    G4Box* bottom_s = new G4Box("TrayBottom", (fProductSizeX + 2*fTrayWallThickness)/2., 
+                                              (fProductSizeY + 2*fTrayWallThickness)/2., 
+                                              bottom_hz);
+    auto bottom_logic = new G4LogicalVolume(bottom_s, fContainerMaterial, "TrayBottom_Logic");
+    
+    G4double bottom_z_pos = -(fProductThickness/2.0 + gap + bottom_hz); 
+    new G4PVPlacement(0, G4ThreeVector(0, 0, bottom_z_pos), bottom_logic, "TrayBottom_Phys", world_logic, false, 0);
+
+    // Стенки вдоль X
+    G4Box* wallX_s = new G4Box("TrayWallX", fTrayWallThickness/2.0, fProductSizeY/2.0, fProductThickness/2.0);
+    auto wallX_logic = new G4LogicalVolume(wallX_s, fContainerMaterial, "TrayWallX_Logic");
+    new G4PVPlacement(0, G4ThreeVector(-(fProductSizeX/2.0 + gap + fTrayWallThickness/2.0), 0, 0), wallX_logic, "WallX1", world_logic, false, 0);
+    new G4PVPlacement(0, G4ThreeVector( (fProductSizeX/2.0 + gap + fTrayWallThickness/2.0), 0, 0), wallX_logic, "WallX2", world_logic, false, 0);
+
+    // Стенки вдоль Y
+    G4Box* wallY_s = new G4Box("TrayWallY", (fProductSizeX + 2*fTrayWallThickness)/2.0, fTrayWallThickness/2.0, fProductThickness/2.0);
+    auto wallY_logic = new G4LogicalVolume(wallY_s, fContainerMaterial, "TrayWallY_Logic");
+    new G4PVPlacement(0, G4ThreeVector(0, -(fProductSizeY/2.0 + gap + fTrayWallThickness/2.0), 0), wallY_logic, "WallY1", world_logic, false, 0);
+    new G4PVPlacement(0, G4ThreeVector(0,  (fProductSizeY/2.0 + gap + fTrayWallThickness/2.0), 0), wallY_logic, "WallY2", world_logic, false, 0);
 
     // Визуализация
     world_logic->SetVisAttributes(G4VisAttributes::GetInvisible());
-    auto tVis = new G4VisAttributes(G4Color(0.7, 0.7, 0.7, 0.3));
+    auto tVis = new G4VisAttributes(G4Color(1.0, 0.0, 0.0, 0.5)); 
     tVis->SetForceSolid(true);
-    tray_logic->SetVisAttributes(tVis);
+    bottom_logic->SetVisAttributes(tVis);
+    wallX_logic->SetVisAttributes(tVis);
+    wallY_logic->SetVisAttributes(tVis);
 
-    auto pVis = new G4VisAttributes(G4Color(0.0, 0.8, 0.0, 0.4));
+    auto pVis = new G4VisAttributes(G4Color(1.0, 1.0, 1.0, 0.4)); 
     pVis->SetForceSolid(true);
     fProductLogic->SetVisAttributes(pVis);
 
