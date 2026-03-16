@@ -984,6 +984,8 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /usr/local/include/Geant4/CLHEP/Utility/defs.h \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /Users/pavelsimko/Documents/cube/include/CubeEventAction.hh \
+  /usr/local/include/Geant4/G4UserEventAction.hh \
   /usr/local/include/Geant4/G4Step.hh \
   /usr/local/include/Geant4/G4VPhysicalVolume.hh \
   /usr/local/include/Geant4/geomdefs.hh \

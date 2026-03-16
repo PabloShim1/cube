@@ -1,15 +1,101 @@
-
 /run/numberOfThreads 8
-
 /run/initialize
 
-# --- Расчет 1 (40 мм) ---
-/cube/geometry/thickness 5 mm
-# Важно: ReinitializeGeometry вызывается внутри C++ кода команды thickness
-/run/beamOn 1000000
-/run/printProgress 10000
+# --- Тестовый расчет: 1 000 000 частиц ---
+# Шаг по толщине: 2 мм (от 5 до 51 мм)
 
-# --- Расчет 2 (47 мм) ---
+/cube/geometry/thickness 5 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
 /cube/geometry/thickness 7 mm
 /run/beamOn 1000000
-/run/printProgress 10000
+/run/printProgress 100000
+
+/cube/geometry/thickness 9 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 11 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 13 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 15 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 17 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 19 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 21 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 23 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 25 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 27 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 29 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 31 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 33 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 35 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 37 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 39 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 41 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 43 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 45 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 47 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 49 mm
+/run/beamOn 1000000
+/run/printProgress 100000
+
+/cube/geometry/thickness 51 mm
+/run/beamOn 1000000
+/run/printProgress 100000

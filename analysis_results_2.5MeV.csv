@@ -1,0 +1,16 @@
+File,Thick(mm),DUR,Eff(%),Max_Dose_MeV
+Output_Run_0.root,5,1.368,2.31,30338.38
+Output_Run_1.root,7,1.556,3.36,35736.38
+Output_Run_2.root,9,1.61,4.43,38896.76
+Output_Run_3.root,11,1.579,5.5,38861.81
+Output_Run_4.root,13,1.453,6.47,33853.9
+Output_Run_5.root,15,1.443,7.22,28890.84
+Output_Run_6.root,17,2.318,7.7,28890.69
+Output_Run_7.root,19,6.747,7.89,28503.97
+Output_Run_8.root,21,19.199,7.93,28416.57
+Output_Run_9.root,23,19.011,7.93,28358.45
+Output_Run_10.root,25,18.834,7.93,28411.22
+Output_Run_11.root,27,18.746,7.94,28408.03
+Output_Run_12.root,29,19.154,7.94,28429.22
+Output_Run_13.root,31,18.957,7.93,28355.58
+Output_Run_14.root,33,19.107,7.93,28372.34
