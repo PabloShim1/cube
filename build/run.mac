@@ -1,7 +1,11 @@
+# --- 1. ИНИЦИАЛИЗАЦИЯ ЯДРА ---
 /run/initialize
-#
+
+# --- 2. ТЕПЕРЬ МОЖНО НАСТРАИВАТЬ ПУШКУ ---
+# Теперь команда /gun/ существует
 /gun/particle e-
 /gun/energy 10 MeV
-#
-/run/printProgress 100000
-/run/beamOn 10000000
+
+# --- 4. ЗАПУСК ---
+/run/printProgress 10000
+/run/beamOn 20000

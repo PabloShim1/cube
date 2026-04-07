@@ -7,12 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/pavelsimko/Documents/cube/CMakeLists.txt"
+  "/Users/pavelsimko/Documents/cub-lab/CMakeLists.txt"
   "CMakeFiles/4.0.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.1/CMakeSystem.cmake"
-  "/Users/pavelsimko/Documents/cube/init_vis.mac"
-  "/Users/pavelsimko/Documents/cube/run.mac"
-  "/Users/pavelsimko/Documents/cube/vis.mac"
+  "/Users/pavelsimko/Documents/cub-lab/init_vis.mac"
+  "/Users/pavelsimko/Documents/cub-lab/run.mac"
+  "/Users/pavelsimko/Documents/cub-lab/vis.mac"
   "/opt/homebrew/opt/qt@5/lib/cmake/Qt53DCore/Qt53DCoreConfig.cmake"
   "/opt/homebrew/opt/qt@5/lib/cmake/Qt53DCore/Qt53DCoreConfigVersion.cmake"
   "/opt/homebrew/opt/qt@5/lib/cmake/Qt53DExtras/Qt53DExtrasConfig.cmake"

@@ -1,6 +1,6 @@
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
-  /Users/pavelsimko/Documents/cube/src/CubeSteppingAction.cc \
-  /Users/pavelsimko/Documents/cube/include/CubeSteppingAction.hh \
+  /Users/pavelsimko/Documents/cub-lab/src/CubeSteppingAction.cc \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeSteppingAction.hh \
   /usr/local/include/Geant4/G4UserSteppingAction.hh \
   /usr/local/include/Geant4/globals.hh \
   /usr/local/include/Geant4/G4ios.hh \
@@ -978,9 +978,7 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/pavelsimko/Documents/cube/include/CubeEventAction.hh \
-  /usr/local/include/Geant4/G4UserEventAction.hh \
-  /Users/pavelsimko/Documents/cube/include/CubeDetectorConstruction.hh \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeDetectorConstruction.hh \
   /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
   /usr/local/include/Geant4/G4Material.hh \
   /usr/local/include/Geant4/G4Element.hh \
@@ -1071,8 +1069,9 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4Visible.hh \
   /usr/local/include/Geant4/G4Visible.icc \
   /usr/local/include/Geant4/G4Box.icc \
-  /usr/local/include/Geant4/G4LogicalVolume.hh \
-  /usr/local/include/Geant4/G4Region.hh \
+  /usr/local/include/Geant4/G4SystemOfUnits.hh \
+  /usr/local/include/Geant4/G4Step.hh \
+  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
   /usr/local/include/Geant4/G4GeomSplitter.hh \
   /usr/local/include/Geant4/geomwdefs.hh \
   /usr/local/include/Geant4/G4AutoLock.hh \
@@ -1119,11 +1118,7 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/jthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
-  /usr/local/include/Geant4/G4Region.icc \
-  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
   /usr/local/include/Geant4/G4VPhysicalVolume.icc \
-  /usr/local/include/Geant4/G4LogicalVolume.icc \
-  /usr/local/include/Geant4/G4Step.hh \
   /usr/local/include/Geant4/G4StepPoint.hh \
   /usr/local/include/Geant4/G4Allocator.hh \
   /usr/local/include/Geant4/G4AllocatorPool.hh \
@@ -1141,6 +1136,10 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4NavigationLevel.icc \
   /usr/local/include/Geant4/G4NavigationHistoryPool.hh \
   /usr/local/include/Geant4/G4NavigationHistory.icc \
+  /usr/local/include/Geant4/G4LogicalVolume.hh \
+  /usr/local/include/Geant4/G4Region.hh \
+  /usr/local/include/Geant4/G4Region.icc \
+  /usr/local/include/Geant4/G4LogicalVolume.icc \
   /usr/local/include/Geant4/G4TouchableHistory.icc \
   /usr/local/include/Geant4/G4ReferenceCountedHandle.hh \
   /usr/local/include/Geant4/G4StepPoint.icc \
@@ -1161,6 +1160,7 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4VUserTrackInformation.hh \
   /usr/local/include/Geant4/G4PhysicsModelCatalog.hh \
   /usr/local/include/Geant4/G4Track.icc \
+  /usr/local/include/Geant4/G4RunManager.hh \
   /usr/local/include/Geant4/G4Event.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /usr/local/include/Geant4/evtdefs.hh \
@@ -1173,7 +1173,6 @@ CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: \
   /usr/local/include/Geant4/G4TrajectoryContainer.hh \
   /usr/local/include/Geant4/G4VTrajectory.hh \
   /usr/local/include/Geant4/G4VUserEventInformation.hh \
-  /usr/local/include/Geant4/G4RunManager.hh \
   /usr/local/include/Geant4/G4EventManager.hh \
   /usr/local/include/Geant4/G4StackManager.hh \
   /usr/local/include/Geant4/G4UserStackingAction.hh \

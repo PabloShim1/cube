@@ -1,60 +1,41 @@
-#include "CubeDetectorConstruction.hh"
 #include "CubePrimaryGeneratorAction.hh"
-
-#include "G4LogicalVolumeStore.hh"
-#include "G4LogicalVolume.hh"
-#include "G4Box.hh"
+#include "CubeDetectorConstruction.hh"
 #include "G4RunManager.hh"
 #include "G4ParticleGun.hh"
 #include "G4ParticleTable.hh"
-#include "G4ParticleDefinition.hh"
-#include "G4SystemOfUnits.hh"
 #include "Randomize.hh"
+#include "G4SystemOfUnits.hh"
+#include "G4Event.hh"
 
-namespace cube
-{
-
-  PrimaryGeneratorAction::PrimaryGeneratorAction()
-  {
-    const DetectorConstruction *detConstruction = static_cast<const DetectorConstruction *>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
-
-    this->size_z = 0;
-    this->size_x = detConstruction->GetCubeSolid()->GetXHalfLength();
-    this->size_y = detConstruction->GetCubeSolid()->GetYHalfLength();
-
-    auto cube_translate = detConstruction->GetCubePhys()->GetTranslation();
-    this->source_x = cube_translate.getX();
-    this->source_y = cube_translate.getY();
-    this->source_z = cube_translate.getZ() + detConstruction->GetCubeSolid()->GetZHalfLength() + detConstruction->GetSSD();
-
-    this->px = +0;
-    this->py = +0;
-    this->pz = -1;
-
+namespace cube {
+  PrimaryGeneratorAction::PrimaryGeneratorAction() : fBilateral(true) {
     fParticleGun = new G4ParticleGun(1);
     fParticleGun->SetParticleDefinition(G4ParticleTable::GetParticleTable()->FindParticle("e-"));
-    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(this->px, this->py, this->pz));
-    fParticleGun->SetParticleEnergy(10. * MeV);
+    fParticleGun->SetParticleEnergy(10.*MeV);
   }
 
-  //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-  PrimaryGeneratorAction::~PrimaryGeneratorAction()
-  {
+  PrimaryGeneratorAction::~PrimaryGeneratorAction() {
     delete fParticleGun;
   }
 
-  //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+  void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
+    auto det = static_cast<const DetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+    G4double half_z = det->GetCubeThickness()/2.0;
+    G4double ssd = det->GetSSD();
 
-  void PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent)
-  {
-    fParticleGun->SetParticlePosition(
-        G4ThreeVector(
-            this->source_x + (2 * G4UniformRand() - 1) * this->size_x,
-            this->source_y + (2 * G4UniformRand() - 1) * this->size_y,
-            this->source_z));
+    G4double z_gun = half_z + ssd; 
+    G4double current_z = z_gun;
+    G4double pz = -1.0; 
 
+    if (fBilateral && (anEvent->GetEventID() % 2 != 0)) {
+        current_z = -z_gun; 
+        pz = 1.0;           
+    }
+
+    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0,0,pz));
+    G4double hx = det->GetCubeSolid()->GetXHalfLength();
+    G4double hy = det->GetCubeSolid()->GetYHalfLength();
+    fParticleGun->SetParticlePosition(G4ThreeVector((2*G4UniformRand()-1)*hx, (2*G4UniformRand()-1)*hy, current_z));
     fParticleGun->GeneratePrimaryVertex(anEvent);
   }
-
 }

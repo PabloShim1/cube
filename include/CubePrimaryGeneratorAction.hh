@@ -2,12 +2,13 @@
 #define CubePrimaryGeneratorAction_h 1
 
 #include "G4VUserPrimaryGeneratorAction.hh"
-#include "G4ParticleGun.hh"
 #include "globals.hh"
+#include "G4ThreeVector.hh"
 
+// Предварительное объявление классов Geant4
 class G4ParticleGun;
 class G4Event;
-class G4Box;
+class G4GenericMessenger; 
 
 namespace cube
 {
@@ -16,17 +17,22 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
   public:
     PrimaryGeneratorAction();
-    ~PrimaryGeneratorAction() override;
+    virtual ~PrimaryGeneratorAction() override;
 
-  public:
-    void GeneratePrimaries(G4Event*) override;
+    // Метод генерации первичных частиц
+    virtual void GeneratePrimaries(G4Event*) override;
 
   private:
-    G4double source_x, source_y, source_z; // координаты центра плоского параллельного источника.
-    G4double px, py, pz; // направление излучения плоского параллельного источника.
-    G4double size_x, size_y, size_z; // размер плоского параллельного источника.
+    G4ParticleGun* fParticleGun;
+    G4GenericMessenger* fMessenger; // Объект для управления командами из макроса
 
-    G4ParticleGun* fParticleGun = nullptr;
+    // Флаг переключения режима: true - двустороннее, false - одностороннее
+    G4bool fBilateral; 
+
+    // Координаты и параметры источника
+    G4double source_x, source_y, source_z; 
+    G4double px, py, pz; 
+    G4double size_x, size_y, size_z; 
 };
 
 }

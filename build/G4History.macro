@@ -43,11 +43,3 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/control/execute run.mac
-/run/initialize
-/vis/scene/notifyHandlers scene-0
-/gun/particle e-
-/gun/energy 10 MeV
-/run/printProgress 100000
-/run/beamOn 10000000
-/vis/scene/notifyHandlers scene-0

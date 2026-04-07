@@ -1,10 +1,9 @@
 CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o: \
-  /Users/pavelsimko/Documents/cube/src/CubeActionInitialization.cc \
-  /Users/pavelsimko/Documents/cube/include/CubeActionInitialization.hh \
+  /Users/pavelsimko/Documents/cub-lab/src/CubeActionInitialization.cc \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeActionInitialization.hh \
   /usr/local/include/Geant4/G4VUserActionInitialization.hh \
-  /Users/pavelsimko/Documents/cube/include/CubePrimaryGeneratorAction.hh \
+  /Users/pavelsimko/Documents/cub-lab/include/CubePrimaryGeneratorAction.hh \
   /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  /usr/local/include/Geant4/G4ParticleGun.hh \
   /usr/local/include/Geant4/globals.hh \
   /usr/local/include/Geant4/G4ios.hh \
   /usr/local/include/Geant4/G4Types.hh \
@@ -981,68 +980,11 @@ CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /usr/local/include/Geant4/G4VPrimaryGenerator.hh \
   /usr/local/include/Geant4/G4ThreeVector.hh \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /usr/local/include/Geant4/CLHEP/Utility/defs.h \
   /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /usr/local/include/Geant4/G4ParticleDefinition.hh \
-  /usr/local/include/Geant4/G4PDefManager.hh \
-  /usr/local/include/Geant4/G4AutoLock.hh \
-  /usr/local/include/Geant4/G4Threading.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/calendar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/day.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/exception.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/local_info.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month_weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/monthday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/sys_info.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/formatter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/concepts.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/utc_clock.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/zoned_time.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/ostream.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/parser_std_format_spec.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_floating_point.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_result.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_callback.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/intrusive_shared_ptr.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_state.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/intrusive_list_view.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_token.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/jthread.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
-  /usr/local/include/Geant4/pwdefs.hh \
-  /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
-  /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
-  /usr/local/include/Geant4/G4ParticleDefinition.icc \
-  /usr/local/include/Geant4/G4PrimaryVertex.hh \
-  /usr/local/include/Geant4/G4Allocator.hh \
-  /usr/local/include/Geant4/G4AllocatorPool.hh \
-  /usr/local/include/Geant4/G4PrimaryParticle.hh \
-  /usr/local/include/Geant4/G4ParticleMomentum.hh \
-  /Users/pavelsimko/Documents/cube/include/CubeRunAction.hh \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeRunAction.hh \
   /usr/local/include/Geant4/G4UserRunAction.hh \
   /usr/local/include/Geant4/G4Accumulable.hh \
   /usr/local/include/Geant4/G4AccValue.hh \
@@ -1051,7 +993,7 @@ CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o: \
   /usr/local/include/Geant4/G4MergeMode.hh \
   /usr/local/include/Geant4/G4VAccumulable.icc \
   /usr/local/include/Geant4/G4AccValue.icc \
-  /Users/pavelsimko/Documents/cube/include/CubeEventAction.hh \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeEventAction.hh \
   /usr/local/include/Geant4/G4UserEventAction.hh \
-  /Users/pavelsimko/Documents/cube/include/CubeSteppingAction.hh \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeSteppingAction.hh \
   /usr/local/include/Geant4/G4UserSteppingAction.hh

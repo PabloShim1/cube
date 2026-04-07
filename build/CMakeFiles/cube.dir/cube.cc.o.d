@@ -1,5 +1,6 @@
-CMakeFiles/cube.dir/cube.cc.o: /Users/pavelsimko/Documents/cube/cube.cc \
-  /Users/pavelsimko/Documents/cube/include/CubeDetectorConstruction.hh \
+CMakeFiles/cube.dir/cube.cc.o: \
+  /Users/pavelsimko/Documents/cub-lab/cube.cc \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeDetectorConstruction.hh \
   /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
   /usr/local/include/Geant4/globals.hh \
   /usr/local/include/Geant4/G4ios.hh \
@@ -1066,11 +1067,12 @@ CMakeFiles/cube.dir/cube.cc.o: /Users/pavelsimko/Documents/cube/cube.cc \
   /usr/local/include/Geant4/G4Visible.hh \
   /usr/local/include/Geant4/G4Visible.icc \
   /usr/local/include/Geant4/G4Box.icc \
-  /usr/local/include/Geant4/G4LogicalVolume.hh \
-  /usr/local/include/Geant4/G4Region.hh \
-  /usr/local/include/Geant4/G4GeomSplitter.hh \
-  /usr/local/include/Geant4/geomwdefs.hh \
-  /usr/local/include/Geant4/G4AutoLock.hh \
+  /usr/local/include/Geant4/G4SystemOfUnits.hh \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeActionInitialization.hh \
+  /usr/local/include/Geant4/G4VUserActionInitialization.hh \
+  /usr/local/include/Geant4/G4RunManagerFactory.hh \
+  /usr/local/include/Geant4/G4MTRunManager.hh \
+  /usr/local/include/Geant4/G4MTBarrier.hh \
   /usr/local/include/Geant4/G4Threading.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/calendar.h \
@@ -1114,15 +1116,6 @@ CMakeFiles/cube.dir/cube.cc.o: /Users/pavelsimko/Documents/cube/cube.cc \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/jthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
-  /usr/local/include/Geant4/G4Region.icc \
-  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
-  /usr/local/include/Geant4/G4VPhysicalVolume.icc \
-  /usr/local/include/Geant4/G4LogicalVolume.icc \
-  /Users/pavelsimko/Documents/cube/include/CubeActionInitialization.hh \
-  /usr/local/include/Geant4/G4VUserActionInitialization.hh \
-  /usr/local/include/Geant4/G4RunManagerFactory.hh \
-  /usr/local/include/Geant4/G4MTRunManager.hh \
-  /usr/local/include/Geant4/G4MTBarrier.hh \
   /usr/local/include/Geant4/G4RNGHelper.hh \
   /usr/local/include/Geant4/G4RunManager.hh \
   /usr/local/include/Geant4/G4Event.hh \
@@ -1151,6 +1144,15 @@ CMakeFiles/cube.dir/cube.cc.o: /Users/pavelsimko/Documents/cube/cube.cc \
   /usr/local/include/Geant4/G4SubEvent.hh \
   /usr/local/include/Geant4/G4Track.hh \
   /usr/local/include/Geant4/trkdefs.hh \
+  /usr/local/include/Geant4/G4LogicalVolume.hh \
+  /usr/local/include/Geant4/G4Region.hh \
+  /usr/local/include/Geant4/G4GeomSplitter.hh \
+  /usr/local/include/Geant4/geomwdefs.hh \
+  /usr/local/include/Geant4/G4AutoLock.hh \
+  /usr/local/include/Geant4/G4Region.icc \
+  /usr/local/include/Geant4/G4VPhysicalVolume.hh \
+  /usr/local/include/Geant4/G4VPhysicalVolume.icc \
+  /usr/local/include/Geant4/G4LogicalVolume.icc \
   /usr/local/include/Geant4/G4DynamicParticle.hh \
   /usr/local/include/Geant4/G4ElectronOccupancy.hh \
   /usr/local/include/Geant4/G4LorentzVector.hh \

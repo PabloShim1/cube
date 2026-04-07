@@ -1,51 +1,43 @@
 #include "CubeSteppingAction.hh"
-#include "CubeEventAction.hh"
 #include "CubeDetectorConstruction.hh"
-
 #include "G4Step.hh"
-#include "G4Event.hh"
 #include "G4RunManager.hh"
-#include "G4LogicalVolume.hh"
 #include "G4AnalysisManager.hh"
+#include "G4SystemOfUnits.hh"
 
-namespace cube
-{
+namespace cube {
+  SteppingAction::SteppingAction(EventAction* event) : G4UserSteppingAction() {}
 
-SteppingAction::SteppingAction(EventAction* eventAction)
-: fEventAction(eventAction)
-{
-    const DetectorConstruction* detConstruction
-        = static_cast<const DetectorConstruction*>
-        (G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+  SteppingAction::~SteppingAction() {} // Исправляет ошибку vtable
 
-    this->fScoringVolume = detConstruction->GetCubeLogic();
-}
+  void SteppingAction::UserSteppingAction(const G4Step* step) {
+    auto det = static_cast<const DetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+    
+    // Проверка, что мы внутри куба
+    if (step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume() != det->GetCubeLogic()) return;
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+    G4double edep = step->GetTotalEnergyDeposit();
+    if (edep <= 0.) return;
 
-SteppingAction::~SteppingAction()
-{}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-void SteppingAction::UserSteppingAction(const G4Step* step)
-{
-    auto volume = step->GetPreStepPoint()
-                      ->GetTouchableHandle()
-                      ->GetVolume()
-                      ->GetLogicalVolume();
-
-    if (volume != this->fScoringVolume) {
-        return;
-    }
-
-    auto pre = step->GetPreStepPoint()->GetPosition();
-    auto post = step->GetPostStepPoint()->GetPosition();
-    auto pos = pre + (post - pre) * G4UniformRand();
-    auto edep = step->GetTotalEnergyDeposit();
-
+    auto transform = step->GetPreStepPoint()->GetTouchableHandle()->GetHistory()->GetTopTransform();
+    G4double thickness = det->GetCubeThickness();
+    G4double stepLength = step->GetStepLength();
+    
+    // Дробление шага для точности
+    int n_points = std::max(1, (int)(stepLength / (0.1 * mm)));
     auto analysis = G4AnalysisManager::Instance();
-    analysis->FillH3(0, pos.getX(), pos.getY(), pos.getZ(), edep);
-}
 
+    for (int i = 0; i < n_points; i++) {
+        G4ThreeVector worldPos = step->GetPreStepPoint()->GetPosition() + ((i+0.5)/n_points)*(step->GetPostStepPoint()->GetPosition() - step->GetPreStepPoint()->GetPosition());
+        G4ThreeVector localPos = transform.TransformPoint(worldPos);
+        
+        // Глубина от ВЕРХНЕЙ грани (Z лок = +120мм)
+        G4double depth = (thickness / 2.0) - localPos.z();
+
+        if (depth >= 0 && depth <= thickness) {
+            analysis->FillH1(0, depth/mm, (edep/n_points)/MeV);
+        }
+        analysis->FillH3(0, localPos.x()/mm, localPos.y()/mm, localPos.z()/mm, (edep/n_points)/MeV);
+    }
+  }
 }

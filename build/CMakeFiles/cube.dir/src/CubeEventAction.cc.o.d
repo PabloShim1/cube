@@ -1,6 +1,6 @@
 CMakeFiles/cube.dir/src/CubeEventAction.cc.o: \
-  /Users/pavelsimko/Documents/cube/src/CubeEventAction.cc \
-  /Users/pavelsimko/Documents/cube/include/CubeEventAction.hh \
+  /Users/pavelsimko/Documents/cub-lab/src/CubeEventAction.cc \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeEventAction.hh \
   /usr/local/include/Geant4/G4UserEventAction.hh \
   /usr/local/include/Geant4/globals.hh \
   /usr/local/include/Geant4/G4ios.hh \
@@ -978,7 +978,7 @@ CMakeFiles/cube.dir/src/CubeEventAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/pavelsimko/Documents/cube/include/CubeRunAction.hh \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeRunAction.hh \
   /usr/local/include/Geant4/G4UserRunAction.hh \
   /usr/local/include/Geant4/G4Accumulable.hh \
   /usr/local/include/Geant4/G4AccValue.hh \

@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/pavelsimko/Documents/cube/build/cmake_install.cmake"
+		"/Users/pavelsimko/Documents/cub-lab/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

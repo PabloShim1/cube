@@ -1,7 +1,7 @@
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
-  /Users/pavelsimko/Documents/cube/src/CubePrimaryGeneratorAction.cc \
-  /Users/pavelsimko/Documents/cube/include/CubeDetectorConstruction.hh \
-  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+  /Users/pavelsimko/Documents/cub-lab/src/CubePrimaryGeneratorAction.cc \
+  /Users/pavelsimko/Documents/cub-lab/include/CubePrimaryGeneratorAction.hh \
+  /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /usr/local/include/Geant4/globals.hh \
   /usr/local/include/Geant4/G4ios.hh \
   /usr/local/include/Geant4/G4Types.hh \
@@ -978,6 +978,12 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
+  /usr/local/include/Geant4/G4ThreeVector.hh \
+  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
+  /usr/local/include/Geant4/CLHEP/Utility/defs.h \
+  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /Users/pavelsimko/Documents/cub-lab/include/CubeDetectorConstruction.hh \
+  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
   /usr/local/include/Geant4/G4Material.hh \
   /usr/local/include/Geant4/G4Element.hh \
   /usr/local/include/Geant4/G4ElementTable.hh \
@@ -1024,10 +1030,6 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /usr/local/include/Geant4/G4ThreeVector.hh \
-  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
-  /usr/local/include/Geant4/CLHEP/Utility/defs.h \
-  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc \
   /usr/local/include/Geant4/G4RotationMatrix.hh \
   /usr/local/include/Geant4/CLHEP/Vector/Rotation.h \
   /usr/local/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
@@ -1067,6 +1069,34 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /usr/local/include/Geant4/G4Visible.hh \
   /usr/local/include/Geant4/G4Visible.icc \
   /usr/local/include/Geant4/G4Box.icc \
+  /usr/local/include/Geant4/G4SystemOfUnits.hh \
+  /usr/local/include/Geant4/G4RunManager.hh \
+  /usr/local/include/Geant4/G4Event.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
+  /usr/local/include/Geant4/evtdefs.hh \
+  /usr/local/include/Geant4/G4Allocator.hh \
+  /usr/local/include/Geant4/G4AllocatorPool.hh \
+  /usr/local/include/Geant4/G4PrimaryVertex.hh \
+  /usr/local/include/Geant4/G4PrimaryParticle.hh \
+  /usr/local/include/Geant4/pwdefs.hh \
+  /usr/local/include/Geant4/G4HCofThisEvent.hh \
+  /usr/local/include/Geant4/G4VHitsCollection.hh \
+  /usr/local/include/Geant4/G4DCofThisEvent.hh \
+  /usr/local/include/Geant4/G4VDigiCollection.hh \
+  /usr/local/include/Geant4/G4TrajectoryContainer.hh \
+  /usr/local/include/Geant4/G4VTrajectory.hh \
+  /usr/local/include/Geant4/G4VUserEventInformation.hh \
+  /usr/local/include/Geant4/G4EventManager.hh \
+  /usr/local/include/Geant4/G4StackManager.hh \
+  /usr/local/include/Geant4/G4UserStackingAction.hh \
+  /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /usr/local/include/Geant4/G4StackedTrack.hh \
+  /usr/local/include/Geant4/G4TrackStack.hh \
+  /usr/local/include/Geant4/G4SmartTrackStack.hh \
+  /usr/local/include/Geant4/G4SubEventTrackStack.hh \
+  /usr/local/include/Geant4/G4SubEvent.hh \
+  /usr/local/include/Geant4/G4Track.hh \
+  /usr/local/include/Geant4/trkdefs.hh \
   /usr/local/include/Geant4/G4LogicalVolume.hh \
   /usr/local/include/Geant4/G4Region.hh \
   /usr/local/include/Geant4/G4GeomSplitter.hh \
@@ -1119,47 +1149,13 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /usr/local/include/Geant4/G4VPhysicalVolume.hh \
   /usr/local/include/Geant4/G4VPhysicalVolume.icc \
   /usr/local/include/Geant4/G4LogicalVolume.icc \
-  /Users/pavelsimko/Documents/cube/include/CubePrimaryGeneratorAction.hh \
-  /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  /usr/local/include/Geant4/G4ParticleGun.hh \
-  /usr/local/include/Geant4/G4VPrimaryGenerator.hh \
-  /usr/local/include/Geant4/G4ParticleDefinition.hh \
-  /usr/local/include/Geant4/G4PDefManager.hh \
-  /usr/local/include/Geant4/pwdefs.hh \
-  /usr/local/include/Geant4/G4ParticleDefinition.icc \
-  /usr/local/include/Geant4/G4PrimaryVertex.hh \
-  /usr/local/include/Geant4/G4Allocator.hh \
-  /usr/local/include/Geant4/G4AllocatorPool.hh \
-  /usr/local/include/Geant4/G4PrimaryParticle.hh \
-  /usr/local/include/Geant4/G4ParticleMomentum.hh \
-  /usr/local/include/Geant4/G4LogicalVolumeStore.hh \
-  /usr/local/include/Geant4/G4VStoreNotifier.hh \
-  /usr/local/include/Geant4/G4VNotifier.hh \
-  /usr/local/include/Geant4/G4RunManager.hh \
-  /usr/local/include/Geant4/G4Event.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
-  /usr/local/include/Geant4/evtdefs.hh \
-  /usr/local/include/Geant4/G4HCofThisEvent.hh \
-  /usr/local/include/Geant4/G4VHitsCollection.hh \
-  /usr/local/include/Geant4/G4DCofThisEvent.hh \
-  /usr/local/include/Geant4/G4VDigiCollection.hh \
-  /usr/local/include/Geant4/G4TrajectoryContainer.hh \
-  /usr/local/include/Geant4/G4VTrajectory.hh \
-  /usr/local/include/Geant4/G4VUserEventInformation.hh \
-  /usr/local/include/Geant4/G4EventManager.hh \
-  /usr/local/include/Geant4/G4StackManager.hh \
-  /usr/local/include/Geant4/G4UserStackingAction.hh \
-  /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
-  /usr/local/include/Geant4/G4StackedTrack.hh \
-  /usr/local/include/Geant4/G4TrackStack.hh \
-  /usr/local/include/Geant4/G4SmartTrackStack.hh \
-  /usr/local/include/Geant4/G4SubEventTrackStack.hh \
-  /usr/local/include/Geant4/G4SubEvent.hh \
-  /usr/local/include/Geant4/G4Track.hh \
-  /usr/local/include/Geant4/trkdefs.hh \
   /usr/local/include/Geant4/G4DynamicParticle.hh \
   /usr/local/include/Geant4/G4ElectronOccupancy.hh \
   /usr/local/include/Geant4/G4LorentzVector.hh \
+  /usr/local/include/Geant4/G4ParticleDefinition.hh \
+  /usr/local/include/Geant4/G4PDefManager.hh \
+  /usr/local/include/Geant4/G4ParticleDefinition.icc \
+  /usr/local/include/Geant4/G4ParticleMomentum.hh \
   /usr/local/include/Geant4/G4DynamicParticle.icc \
   /usr/local/include/Geant4/G4TrackStatus.hh \
   /usr/local/include/Geant4/G4TouchableHandle.hh \
@@ -1293,4 +1289,5 @@ CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: \
   /usr/local/include/Geant4/G4RunManagerKernel.hh \
   /usr/local/include/Geant4/rundefs.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
-  /usr/local/include/Geant4/G4SystemOfUnits.hh
+  /usr/local/include/Geant4/G4ParticleGun.hh \
+  /usr/local/include/Geant4/G4VPrimaryGenerator.hh

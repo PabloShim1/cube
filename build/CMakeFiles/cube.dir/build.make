@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/pavelsimko/Documents/cube
+CMAKE_SOURCE_DIR = /Users/pavelsimko/Documents/cub-lab
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/pavelsimko/Documents/cube/build
+CMAKE_BINARY_DIR = /Users/pavelsimko/Documents/cub-lab/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cube.dir/depend.make
@@ -73,102 +73,102 @@ CMakeFiles/cube.dir/codegen:
 .PHONY : CMakeFiles/cube.dir/codegen
 
 CMakeFiles/cube.dir/cube.cc.o: CMakeFiles/cube.dir/flags.make
-CMakeFiles/cube.dir/cube.cc.o: /Users/pavelsimko/Documents/cube/cube.cc
+CMakeFiles/cube.dir/cube.cc.o: /Users/pavelsimko/Documents/cub-lab/cube.cc
 CMakeFiles/cube.dir/cube.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cube.dir/cube.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/cube.cc.o -MF CMakeFiles/cube.dir/cube.cc.o.d -o CMakeFiles/cube.dir/cube.cc.o -c /Users/pavelsimko/Documents/cube/cube.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cub-lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cube.dir/cube.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/cube.cc.o -MF CMakeFiles/cube.dir/cube.cc.o.d -o CMakeFiles/cube.dir/cube.cc.o -c /Users/pavelsimko/Documents/cub-lab/cube.cc
 
 CMakeFiles/cube.dir/cube.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube.dir/cube.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cube/cube.cc > CMakeFiles/cube.dir/cube.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cub-lab/cube.cc > CMakeFiles/cube.dir/cube.cc.i
 
 CMakeFiles/cube.dir/cube.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/cube.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/cube.cc -o CMakeFiles/cube.dir/cube.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cub-lab/cube.cc -o CMakeFiles/cube.dir/cube.cc.s
 
 CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o: CMakeFiles/cube.dir/flags.make
-CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o: /Users/pavelsimko/Documents/cube/src/CubeActionInitialization.cc
+CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o: /Users/pavelsimko/Documents/cub-lab/src/CubeActionInitialization.cc
 CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o -MF CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o.d -o CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cub-lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o -MF CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o.d -o CMakeFiles/cube.dir/src/CubeActionInitialization.cc.o -c /Users/pavelsimko/Documents/cub-lab/src/CubeActionInitialization.cc
 
 CMakeFiles/cube.dir/src/CubeActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube.dir/src/CubeActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cube/src/CubeActionInitialization.cc > CMakeFiles/cube.dir/src/CubeActionInitialization.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cub-lab/src/CubeActionInitialization.cc > CMakeFiles/cube.dir/src/CubeActionInitialization.cc.i
 
 CMakeFiles/cube.dir/src/CubeActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/src/CubeActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/src/CubeActionInitialization.cc -o CMakeFiles/cube.dir/src/CubeActionInitialization.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cub-lab/src/CubeActionInitialization.cc -o CMakeFiles/cube.dir/src/CubeActionInitialization.cc.s
 
 CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: CMakeFiles/cube.dir/flags.make
-CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documents/cube/src/CubeDetectorConstruction.cc
+CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: /Users/pavelsimko/Documents/cub-lab/src/CubeDetectorConstruction.cc
 CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o -MF CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o.d -o CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeDetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cub-lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o -MF CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o.d -o CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.o -c /Users/pavelsimko/Documents/cub-lab/src/CubeDetectorConstruction.cc
 
 CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cube/src/CubeDetectorConstruction.cc > CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cub-lab/src/CubeDetectorConstruction.cc > CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.i
 
 CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/src/CubeDetectorConstruction.cc -o CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cub-lab/src/CubeDetectorConstruction.cc -o CMakeFiles/cube.dir/src/CubeDetectorConstruction.cc.s
 
 CMakeFiles/cube.dir/src/CubeEventAction.cc.o: CMakeFiles/cube.dir/flags.make
-CMakeFiles/cube.dir/src/CubeEventAction.cc.o: /Users/pavelsimko/Documents/cube/src/CubeEventAction.cc
+CMakeFiles/cube.dir/src/CubeEventAction.cc.o: /Users/pavelsimko/Documents/cub-lab/src/CubeEventAction.cc
 CMakeFiles/cube.dir/src/CubeEventAction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cube.dir/src/CubeEventAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeEventAction.cc.o -MF CMakeFiles/cube.dir/src/CubeEventAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeEventAction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeEventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cub-lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cube.dir/src/CubeEventAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeEventAction.cc.o -MF CMakeFiles/cube.dir/src/CubeEventAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeEventAction.cc.o -c /Users/pavelsimko/Documents/cub-lab/src/CubeEventAction.cc
 
 CMakeFiles/cube.dir/src/CubeEventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube.dir/src/CubeEventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cube/src/CubeEventAction.cc > CMakeFiles/cube.dir/src/CubeEventAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cub-lab/src/CubeEventAction.cc > CMakeFiles/cube.dir/src/CubeEventAction.cc.i
 
 CMakeFiles/cube.dir/src/CubeEventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/src/CubeEventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/src/CubeEventAction.cc -o CMakeFiles/cube.dir/src/CubeEventAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cub-lab/src/CubeEventAction.cc -o CMakeFiles/cube.dir/src/CubeEventAction.cc.s
 
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: CMakeFiles/cube.dir/flags.make
-CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: /Users/pavelsimko/Documents/cube/src/CubePrimaryGeneratorAction.cc
+CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: /Users/pavelsimko/Documents/cub-lab/src/CubePrimaryGeneratorAction.cc
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o -MF CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o.d -o CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubePrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cub-lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o -MF CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o.d -o CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.o -c /Users/pavelsimko/Documents/cub-lab/src/CubePrimaryGeneratorAction.cc
 
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cube/src/CubePrimaryGeneratorAction.cc > CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cub-lab/src/CubePrimaryGeneratorAction.cc > CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.i
 
 CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/src/CubePrimaryGeneratorAction.cc -o CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cub-lab/src/CubePrimaryGeneratorAction.cc -o CMakeFiles/cube.dir/src/CubePrimaryGeneratorAction.cc.s
 
 CMakeFiles/cube.dir/src/CubeRunAction.cc.o: CMakeFiles/cube.dir/flags.make
-CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cube/src/CubeRunAction.cc
+CMakeFiles/cube.dir/src/CubeRunAction.cc.o: /Users/pavelsimko/Documents/cub-lab/src/CubeRunAction.cc
 CMakeFiles/cube.dir/src/CubeRunAction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cube.dir/src/CubeRunAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeRunAction.cc.o -MF CMakeFiles/cube.dir/src/CubeRunAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeRunAction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeRunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cub-lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cube.dir/src/CubeRunAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeRunAction.cc.o -MF CMakeFiles/cube.dir/src/CubeRunAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeRunAction.cc.o -c /Users/pavelsimko/Documents/cub-lab/src/CubeRunAction.cc
 
 CMakeFiles/cube.dir/src/CubeRunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube.dir/src/CubeRunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cube/src/CubeRunAction.cc > CMakeFiles/cube.dir/src/CubeRunAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cub-lab/src/CubeRunAction.cc > CMakeFiles/cube.dir/src/CubeRunAction.cc.i
 
 CMakeFiles/cube.dir/src/CubeRunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/src/CubeRunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/src/CubeRunAction.cc -o CMakeFiles/cube.dir/src/CubeRunAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cub-lab/src/CubeRunAction.cc -o CMakeFiles/cube.dir/src/CubeRunAction.cc.s
 
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: CMakeFiles/cube.dir/flags.make
-CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cube/src/CubeSteppingAction.cc
+CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: /Users/pavelsimko/Documents/cub-lab/src/CubeSteppingAction.cc
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o: CMakeFiles/cube.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o -MF CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o -c /Users/pavelsimko/Documents/cube/src/CubeSteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pavelsimko/Documents/cub-lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o -MF CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o.d -o CMakeFiles/cube.dir/src/CubeSteppingAction.cc.o -c /Users/pavelsimko/Documents/cub-lab/src/CubeSteppingAction.cc
 
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cube.dir/src/CubeSteppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cube/src/CubeSteppingAction.cc > CMakeFiles/cube.dir/src/CubeSteppingAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pavelsimko/Documents/cub-lab/src/CubeSteppingAction.cc > CMakeFiles/cube.dir/src/CubeSteppingAction.cc.i
 
 CMakeFiles/cube.dir/src/CubeSteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cube.dir/src/CubeSteppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cube/src/CubeSteppingAction.cc -o CMakeFiles/cube.dir/src/CubeSteppingAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pavelsimko/Documents/cub-lab/src/CubeSteppingAction.cc -o CMakeFiles/cube.dir/src/CubeSteppingAction.cc.s
 
 # Object files for target cube
 cube_OBJECTS = \
@@ -230,7 +230,7 @@ cube: /usr/local/lib/libG4global.dylib
 cube: /usr/local/lib/libG4clhep.dylib
 cube: /usr/local/lib/libG4ptl.3.0.0.dylib
 cube: CMakeFiles/cube.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pavelsimko/Documents/cube/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable cube"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pavelsimko/Documents/cub-lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable cube"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cube.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -242,6 +242,6 @@ CMakeFiles/cube.dir/clean:
 .PHONY : CMakeFiles/cube.dir/clean
 
 CMakeFiles/cube.dir/depend:
-	cd /Users/pavelsimko/Documents/cube/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/pavelsimko/Documents/cube /Users/pavelsimko/Documents/cube /Users/pavelsimko/Documents/cube/build /Users/pavelsimko/Documents/cube/build /Users/pavelsimko/Documents/cube/build/CMakeFiles/cube.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/pavelsimko/Documents/cub-lab/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/pavelsimko/Documents/cub-lab /Users/pavelsimko/Documents/cub-lab /Users/pavelsimko/Documents/cub-lab/build /Users/pavelsimko/Documents/cub-lab/build /Users/pavelsimko/Documents/cub-lab/build/CMakeFiles/cube.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/cube.dir/depend
 
